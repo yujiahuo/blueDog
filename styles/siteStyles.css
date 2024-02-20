@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+	font-family: system-ui;
+	box-sizing: border-box;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.section {
+	width: 100%;
+	position: relative;
+}
+
+.pageContent {
+	position: relative;
+	top: 3rem; /* Make space for the menu, which is absolute positioned for the sake of the dropdowns */
+}
+
+.card {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 1.5rem;
+}
+
+.description {
+	font-size: 13px;
+	color: #464646;
+	font-style: italic;
+	margin-bottom: 0.5rem;
+}
+
+/* Gives some spacing between text things */
+p + * {
+	margin-top: 1rem;
+}
+
+h3 + * {
+	margin-top: 1rem;
+}
+
+.button {
+	padding: 0.5rem;
+    width: fit-content;
+    display: block;
+    background-color: #e5f8ff;
+    border: 1px solid #72d7f8;
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+
+a.button:visited {
+	color: inherit;
+}

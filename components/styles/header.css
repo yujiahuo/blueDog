@@ -12,8 +12,8 @@
 .menu {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(7, 14%);
-	grid-template-rows: 5rem auto;
+	grid-template-columns: repeat(7, 20%);
+	grid-template-rows: 3rem auto;
 }
 
 .menuItem {
@@ -46,16 +46,6 @@
 	grid-row: 1;
 }
 
-.menuItem-6 {
-	grid-column: 6;
-	grid-row: 1;
-}
-
-.menuItem-7 {
-	grid-column: 7;
-	grid-row: 1;
-}
-
 .menuDropdown-1 {
 	grid-column: 1 / span 3;
 	grid-row: 2;
@@ -84,9 +74,13 @@ a.menuItem {
 
 .menuDropdown {
 	width: fit-content;
-	display: flex;
+	display: none;
 	padding: 0.5rem;
 	z-index: 1;
+}
+
+.menuItem.selected + .menuDropdown {
+	display: flex;
 }
 
 .column {
@@ -107,16 +101,9 @@ a.menuItem {
 	text-decoration: none;
 	padding: 0.3rem;
 	display: block;
-	color: #095fff;
+	color: #3561b3;
 }
 
 .menuDropdown a:hover {
 	background-color: #bfefff;
-}
-
-.description {
-	font-size: 13px;
-	color: #464646;
-	font-style: italic;
-	margin-bottom: 0.5rem;
 }
