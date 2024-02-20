@@ -1,0 +1,9 @@
+@media (max-width: 900px) {
+	.menu {
+		display: none;
+	}
+
+	.posterLeft {
+		width: 100%;
+	}
+}

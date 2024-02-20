@@ -1,100 +1,32 @@
 <html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
-		<script src="setupPage.js"></script>
-		<script src="scripts.js"></script>
-		<link rel="stylesheet" href="styles.css">
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="scripts/setupPage.js"></script>
+		<script src="scripts/scripts.js"></script>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/mobile.css">
 	</head>
-	<body onload="renderHeaderAndFooter()">
-		<div id="header">
-			<div id="trainingServicesDropdown" class="menuDropdown hidden">
-				<div class="column">
-					<div class="label">For puppies</div>
-					<a href="#">
-						<div>Stay and train</div>
-						<div class="description">Let your new puppy pee in Sarah's house instead of yours</div>
-					</a>
-					<a href="#">
-						<div>New puppy ABCs</div>
-						<div class="description">Set your new puppy up for success in the most critical time period of their life</div>
-					</a>
-				</div>
-				<div class="column">
-					<div class="label">For all dogs</div>
-					<a href="#">
-						<div>New dog ABCs</div>
-						<div class="description">Set your new dog up for success</div>
-					</a>
-					<a href="#">
-						<div>Behavior modification</div>
-						<div class="description">Help with problem behaviors</div>
-					</a>
-					<a href="#">
-						<div>Behavior modification</div>
-						<div class="description">Help with problem behaviors</div>
-					</a>
-				</div>
-			</div>
-			<div id="professionalServicesDropdown" class="menuDropdown hidden">
-				<div class="column">
-					<div class="label">A thing</div>
-					<a href="#">
-						<div>Hello</div>
-						<div class="description">Doing stuff</div>
-					</a>
-					<a href="#">
-						<div>New puppy ABCs</div>
-						<div class="description">Set your new puppy up for success in the most critical time period of their life</div>
-					</a>
-				</div>
-				<div class="column">
-					<div class="label">For all dogs</div>
-					<a href="#">
-						<div>New dog ABCs</div>
-						<div class="description">Set your new dog up for success</div>
-					</a>
-					<a href="#">
-						<div>Behavior modification</div>
-						<div class="description">Help with problem behaviors</div>
-					</a>
-					<a href="#">
-						<div>Behavior modification</div>
-						<div class="description">Help with problem behaviors</div>
-					</a>
-				</div>
-			</div>
-			<div class="menu">
-				<div id="trainingServicesMenuItem" class="menuItem" onclick="expandTrainingServices()">
-					Training services
-				</div>
-				<div id="professionalServicesMenuItem" class="menuItem" onclick="expandProfessionalServices()">
-					Professional services
-				</div>
-				<a href="#" class="menuItem">
-					Products
-				</a>
-				<a href="#" class="menuItem">
-					Contact
-				</a>
-				<a href="#" class="menuItem">
-					Other thing
-				</a>
-				<a href="#" class="menuItem">
-					Other thing
-				</a>
-				<a href="#" class="menuItem">
-					Other thing
-				</a>
-			</div>
-		</div>
-		<div class="poster">
+	<body>
+		<div id="header"></div>
+
+		<div class="section poster">
 			<div class="posterLeft">
 				<img src="images/blueDogLogo.png">
 				<div class="call">Schedule an appointment: 90238402375</div>
 			</div>
 			<div></div>
 		</div>
-		<div class="content">
+		<div class="section sarahSection">
 			
 		</div>
+		<div class="section featuredServices">
+			
+		</div>
+		<div class="section reviewsSection">
+			
+		</div>
+
+		<div id="footer"></div>
 	</body>
 </html>
