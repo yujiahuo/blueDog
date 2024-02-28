@@ -1,25 +1,36 @@
 .header {
-	display: flex;
-	background-color:#72d7f8;
 	position: absolute;
 	width: 100%;
+	z-index: 1;
+}
+
+.initialHeader {
+	display: flex;
+	height: 4rem;
 }
 
 .header .logo {
-	height: 5rem;
+	height: 4rem;
+    padding: 0.25rem 3rem;
+    background-color: #242424;
+}
+
+.homePage .header .logo {
 	display: none;
 }
-.menu {
+
+#menu {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(7, 20%);
-	grid-template-rows: 3rem auto;
+	grid-template-rows: 4rem auto;
 }
 
 .menuItem {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	background-color:#72d7f8;
 	color: #242424;
 	fill:#242424;
 	font-size: 18px;
@@ -58,9 +69,10 @@
 
 a.menuItem {
 	text-decoration: none;
+	font-weight: 500;
 }
 
-.menu .chevron {
+#menu .chevron {
 	width: 1rem;
 	margin-left: 0.5rem;
 }
@@ -73,7 +85,6 @@ a.menuItem {
 }
 
 .menuDropdown {
-	width: fit-content;
 	display: none;
 	padding: 0.5rem;
 	z-index: 1;
@@ -83,13 +94,20 @@ a.menuItem {
 	display: flex;
 }
 
-.column {
-	width: 15rem;
+@media (min-width: 769px) {
+	.header {
+		display: flex;
+	}
+	
+	.column {
+		width: 15rem;
+	}
+	
+	.column + .column {
+		margin-left: 3rem;
+	}
 }
 
-.column + .column {
-	margin-left: 3rem;
-}
 
 .label {
 	font-size: 14px;
@@ -106,4 +124,71 @@ a.menuItem {
 
 .menuDropdown a:hover {
 	background-color: #bfefff;
+}
+
+.hamburgerIcon {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.mobileHidden {
+		display: none !important;
+	}
+
+	.hamburgerIcon {
+		display: block;
+		margin: auto;
+	}
+
+	#collapsedMenu {
+		display: block;
+		background-color: #72d7f8;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	#menu {
+		grid-template-columns: 100%;
+		grid-template-rows: 3rem auto 3rem auto 3rem 3rem 3rem 3rem;
+	}
+	
+	.menuItem-1 {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.menuItem-2 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.menuItem-3 {
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.menuItem-4 {
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.menuItem-5 {
+		grid-column: 1;
+		grid-row: 7;
+	}
+	
+	.menuDropdown-1 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	
+	.menuDropdown-2 {
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	.menuItem.selected + .menuDropdown {
+		flex-direction: column;
+	}
+
+	.column {
+		width: 100%;
+		margin: auto;
+	}
 }

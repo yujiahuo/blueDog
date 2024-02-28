@@ -1,0 +1,90 @@
+.pageContent {
+	padding: 1rem;
+}
+
+.breadCrumbs {
+	margin-bottom: 1rem;
+}
+
+h2 {
+	margin-bottom: 0.5rem;
+}
+
+.mainContent {
+    width: 75%;
+	margin-left: 20%;
+}
+
+.mainContent:before {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background: url(../images/sodaeyes.jpg);
+	background-size: 22rem;
+	background-repeat: no-repeat;
+}
+
+.upperContent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.aboutService {
+	max-width: 50rem;
+	margin-bottom: 2rem;
+}
+
+.resources {
+	max-width: 20rem;
+}
+
+.resources a {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.testimonialGroup {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 45rem;
+	width: 100%;
+}
+
+.oneTestimony {
+	background-color: #dfecf8;
+	width: 50%;
+	padding: 1rem;
+	color: #464646;
+	font-style: italic;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+@media (max-width: 1460px) {
+	.testimonialGroup {
+		flex-wrap: nowrap;
+	}
+
+	.upperContent {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.mainContent {
+		margin: 0;
+		width: 100%;
+	}
+
+	.testimonialGroup {
+		max-height: none;
+	}
+
+	.oneTestimony {
+		width: 100%;
+	}
+}

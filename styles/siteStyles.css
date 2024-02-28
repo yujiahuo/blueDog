@@ -5,6 +5,16 @@
 	box-sizing: border-box;
 }
 
+h1 {
+	color: #1f80d5;
+    font-weight: 400;
+}
+
+h2 {
+	color: #3d9bed;
+	font-weight: 400;
+}
+
 .hidden {
 	display: none !important;
 }
@@ -16,7 +26,7 @@
 
 .pageContent {
 	position: relative;
-	top: 3rem; /* Make space for the menu, which is absolute positioned for the sake of the dropdowns */
+	top: 4rem; /* Make space for the menu, which is absolute positioned for the sake of the dropdowns */
 }
 
 .card {

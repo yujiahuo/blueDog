@@ -4,10 +4,11 @@ $(document).ready(function() {
 		$(document).on( "click", function(event) {
 			switch (event.target.id) {
 				case "trainingServicesMenuItem":
-					expandTrainingServices();
-					break;
 				case "professionalServicesMenuItem":
-					expandProfessionalServices();
+					toggleMenuItem($(event.target));
+					break;
+				case "collapsedMenu":
+					toggleMobileMenu();
 					break;
 				default:
 					collapseDropdowns();
@@ -18,17 +19,21 @@ $(document).ready(function() {
 	//If home page, hide logo
 });
 
-function expandTrainingServices() {
-	document.getElementById("professionalServicesMenuItem").classList.remove("selected");
-	document.getElementById("trainingServicesMenuItem").classList.add("selected");
-}
-
-function expandProfessionalServices() {
-	document.getElementById("trainingServicesMenuItem").classList.remove("selected");
-	document.getElementById("professionalServicesMenuItem").classList.add("selected");
+function toggleMenuItem(menuItemElem) {
+	if (menuItemElem.hasClass("selected")){
+		menuItemElem.removeClass("selected");
+	}
+	else {
+		collapseDropdowns();
+		menuItemElem.addClass("selected");
+	}
 }
 
 function collapseDropdowns() {
-	document.getElementById("trainingServicesMenuItem").classList.remove("selected");
-	document.getElementById("professionalServicesMenuItem").classList.remove("selected");
+	$("#trainingServicesMenuItem").removeClass("selected");
+	$("#professionalServicesMenuItem").removeClass("selected");
+}
+
+function toggleMobileMenu() {
+	$("#menu").toggleClass("mobileHidden");
 }
