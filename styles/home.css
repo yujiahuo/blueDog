@@ -1,5 +1,5 @@
 .poster {
-	height: 25rem;
+	max-height: 25rem;
 	background-color: #242424;
 	display: flex;
     justify-content: space-between;
@@ -15,7 +15,9 @@
 }
 
 .posterLeft .logo {
-	width: 23rem;
+	width: auto;
+	max-width: 100%;
+	max-height: 15rem;
 	margin: 0 auto;
 }
 
@@ -30,7 +32,7 @@
 }
 
 .posterPhoto {
-	height: 100%;
+	height: 25rem;
     width: 40%;
     background: linear-gradient(to left, transparent, #242424), url(../images/skyejump.jpg);
     background-repeat: no-repeat;
@@ -38,12 +40,15 @@
 }
 
 .sarahSection {
-	height: 25rem;
+	padding: 1rem;
+	padding-bottom: 3rem;
 }
 
 .sarahSection:before {
 	content: ' ';
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 0.3;
@@ -52,7 +57,6 @@
 }
 
 .sarahSectionContent {
-	height: 100%;
 	display: flex;
     align-items: center;
 }
@@ -71,9 +75,9 @@
 }
 
 .featuredServices {
-	height: 25rem;
 	background-color: #72d7f8;
 	text-align: center;
+	padding: 1rem;
 }
 
 .features {
@@ -87,6 +91,7 @@
     border-radius: 0.5rem;
     border: 2px solid white;
     text-align: center;
+	margin: 1rem;
 }
 
 .featureCard .button {
@@ -121,4 +126,36 @@
 .reviewsSection {
 	height: 25rem;
 	background-color: white;
+}
+
+@media (max-width: 768px) {
+	.poster {
+		flex-direction: column;
+	}
+
+	.posterLeft {
+		width: 100%;
+		margin: auto;
+	}
+
+	.posterLeft .call {
+		width: 100%;
+	}
+
+	.posterPhoto {
+		display: none;
+	}
+
+	.sarahSectionContent .card {
+		margin: 0;
+	}
+
+	.features {
+		flex-direction: column;
+	}
+
+	.featureCard {
+		width: 100%;
+		margin: 1rem 0;
+	}
 }
