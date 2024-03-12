@@ -1,90 +1,69 @@
 .pageContent {
-	padding: 1rem;
+  padding: 2rem;
 }
-
-.breadCrumbs {
-	margin-bottom: 1rem;
+.pageContent h2 {
+  margin-bottom: 0.5rem;
 }
-
-h2 {
-	margin-bottom: 0.5rem;
+.pageContent .breadCrumbs {
+  margin-bottom: 1rem;
 }
-
-.mainContent {
-    width: 75%;
-	margin-left: 20%;
-}
-
-.mainContent:before {
-	content: ' ';
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.3;
-	background: url(../images/sodaeyes.jpg);
-	background-size: 22rem;
-	background-repeat: no-repeat;
+.pageContent .mainContent {
+  width: 75%;
+  margin-left: 20%;
 }
 
 .upperContent {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
-.aboutService {
-	max-width: 50rem;
-	margin-bottom: 2rem;
+.upperContent .aboutService {
+  max-width: 50rem;
+  margin-bottom: 2rem;
 }
-
-.resources {
-	max-width: 20rem;
+.upperContent .resources {
+  max-width: 20rem;
 }
-
-.resources a {
-	display: block;
-	margin-bottom: 1rem;
+.upperContent .resources a {
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .testimonialGroup {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	max-height: 45rem;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 45rem;
+  width: 100%;
 }
-
-.oneTestimony {
-	background-color: #dfecf8;
-	width: 50%;
-	padding: 1rem;
-	color: #464646;
-	font-style: italic;
-	margin-bottom: 1rem;
-	margin-right: 1rem;
+.testimonialGroup .oneTestimony {
+  background-color: #dfecf8;
+  width: 50%;
+  min-width: 35rem;
+  padding: 1rem;
+  color: #464646;
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 @media (max-width: 1460px) {
-	.testimonialGroup {
-		flex-wrap: nowrap;
-	}
-
-	.upperContent {
-		flex-direction: column;
-	}
+  .upperContent {
+    flex-direction: column;
+  }
+  .testimonialGroup {
+    flex-wrap: nowrap;
+  }
 }
-
 @media (max-width: 768px) {
-	.mainContent {
-		margin: 0;
-		width: 100%;
-	}
-
-	.testimonialGroup {
-		max-height: none;
-	}
-
-	.oneTestimony {
-		width: 100%;
-	}
-}
+  .pageContent .mainContent {
+    margin: 0;
+    width: 100%;
+  }
+  .testimonialGroup {
+    max-height: none;
+  }
+  .testimonialGroup .oneTestimony {
+    width: 100%;
+    min-width: unset;
+  }
+}/*# sourceMappingURL=services.css.map */

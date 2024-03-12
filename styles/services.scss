@@ -1,0 +1,82 @@
+.pageContent {
+	padding: 2rem;
+
+	h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	.breadCrumbs {
+		margin-bottom: 1rem;
+	}
+
+	.mainContent {
+		width: 75%;
+		margin-left: 20%;
+	}
+}
+
+.upperContent {
+	display: flex;
+	justify-content: space-between;
+
+	.aboutService {
+		max-width: 50rem;
+		margin-bottom: 2rem;
+	}
+
+	.resources {
+		max-width: 20rem;
+	
+		a {
+			display: block;
+			margin-bottom: 1rem;
+		}
+	}
+	
+}
+
+.testimonialGroup {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 45rem;
+	width: 100%;
+
+	.oneTestimony {
+		background-color: #dfecf8;
+		width: 50%;
+		min-width: 35rem;
+		padding: 1rem;
+		color: #464646;
+		font-style: italic;
+		margin-bottom: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width: 1460px) {
+
+	.upperContent {
+		flex-direction: column;
+	}
+
+	.testimonialGroup {
+		flex-wrap: nowrap;
+	}
+}
+
+@media (max-width: 768px) {
+	.pageContent .mainContent {
+		margin: 0;
+		width: 100%;
+	}
+	
+	.testimonialGroup {
+		max-height: none;
+	
+		.oneTestimony {
+			width: 100%;
+			min-width: unset;
+		}
+	}
+}

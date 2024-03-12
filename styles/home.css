@@ -1,183 +1,142 @@
 .sarahSection {
-	padding: 2rem 10%;
-	background-color: #daeeff;
-	background-size: 25rem;
+  padding: 2rem 10%;
+  background-color: #daeeff;
+  background-size: 25rem;
 }
-
-.sarahSectionContent {
-	display: flex;
-    align-items: center;
+.sarahSection .sarahSectionContent {
+  display: flex;
+  align-items: center;
 }
-
-.sarahSectionContent .sarahPhoto {
-	position: relative;
-	min-width: 27rem;
-	max-width: 27rem;
-    height: 37rem;
-	overflow-y: hidden;
-	transform: rotate(358deg);
-	padding: 2rem;
+.sarahSection .sarahSectionContent .sarahPhoto {
+  position: relative;
+  min-width: 27rem;
+  max-width: 27rem;
+  height: 37rem;
+  overflow-y: hidden;
+  transform: rotate(358deg);
+  padding: 2rem;
 }
-
-.sarahPhoto img {
-	width: 100%;
-	text-align: center;
+.sarahSection .sarahSectionContent .sarahPhoto img {
+  width: 100%;
+  text-align: center;
 }
-
-.sarahSectionContent .aboutSarah {
-	position: relative;
-	margin-left: 3rem;
-	max-width: 50rem;
-}
-
-.sarahSection .attribution {
-	position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-	font-size: 0.7rem;
+.sarahSection .sarahSectionContent .aboutSarah {
+  position: relative;
+  margin-left: 3rem;
+  max-width: 50rem;
 }
 
 .featuredServices {
-	background-color: #72d7f8;
-	text-align: center;
-	padding: 1rem;
+  background-color: #72d7f8;
+  text-align: center;
+  padding: 1rem;
 }
-
-.featuredHeader,
-.featuredHeader h2 {
-	color: white;
-	font-size: 2rem;
-	font-weight: 500;
-	display: inline;
+.featuredServices .featuredHeader,
+.featuredServices .featuredHeader h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline;
 }
-
-.fa-bullhorn:first-child {
-	transform: scaleX(-1);
+.featuredServices .fa-bullhorn:first-child {
+  transform: scaleX(-1);
 }
-
-.features {
-	display: flex;
-	justify-content: space-evenly;
+.featuredServices .features {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .featureCard {
-	position: relative;
-    width: 20rem;
-    border-radius: 0.5rem;
-    border: 2px solid white;
-    text-align: center;
-	margin: 1rem;
-	display: flex;
-	flex-direction: column;
+  position: relative;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-
-.featureCard .button {
-	margin-left: auto;
-    margin-right: auto;
-}
-
 .featureCard h3 {
-	font-size: 1.5rem;
-	font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
-
-.featured-1 {
-	background-color: #fff0fe;
+.featureCard .button {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.featured-1 h3 {
-	color: #a16c9e;
+.featureCard .featureImg {
+  width: 100%;
+  height: 12rem;
+  overflow-y: hidden;
 }
-
-.featured-2 {
-	background-color: #daeeff;
+.featureCard .featureImg img {
+  width: 100%;
+  border-radius: 0.5rem;
 }
-
-.featured-2 h3 {
-	color: #466f92;
+.featureCard .featureContent {
+  padding: 1rem;
+  flex-grow: 1;
 }
-
-.featured-3 {
-	background-color: #c6ffe4;
+.featureCard .learnMore {
+  padding: 1rem;
 }
-
-.featured-3 h3 {
-	color: #3f916b;
+.featureCard.featured-1 {
+  background-color: #fff0fe;
 }
-
-.featured-4 {
-	background-color: #ffecd4;
+.featureCard.featured-1 h3 {
+  color: #a16c9e;
 }
-
-.featured-4 h3 {
-	color: #b96a09;
+.featureCard.featured-2 {
+  background-color: #daeeff;
 }
-
-.featureImg {
-	width: 100%;
-	height: 12rem;
-	overflow-y: hidden;
+.featureCard.featured-2 h3 {
+  color: #466f92;
 }
-
-.featureImg img {
-	width: 100%;
-    border-radius: 0.5rem;
+.featureCard.featured-3 {
+  background-color: #c6ffe4;
 }
-
-.featureImgCircle {
-	background-color: white;
-    border-radius: 2rem;
-    width: 4rem;
-    height: 4rem;
-    position: absolute;
-    top: -2rem;
-	left: calc(50% - 2rem);
+.featureCard.featured-3 h3 {
+  color: #3f916b;
 }
-
-.featureContent {
-	padding: 1rem;
-	flex-grow: 1;
+.featureCard.featured-4 {
+  background-color: #ffecd4;
 }
-
-.learnMore {
-	padding: 1rem;
+.featureCard.featured-4 h3 {
+  color: #b96a09;
 }
 
 .reviewsSection {
-	height: 25rem;
-	background-color: white;
+  height: 25rem;
+  background-color: white;
 }
 
-.waveContainer.secondWave {  
-	background-color: #72d7f8;
+/* color override on wave from siteStyles */
+.waveContainer.secondWave {
+  background-color: #72d7f8;
 }
-  
-.waveContainer.secondWave::before {   
-	background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23FFFFFF'/></svg>");
+.waveContainer.secondWave::before {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23FFFFFF'/></svg>");
 }
 
-@media (max-width: 768px) {
-	.sarahSectionContent{
-		flex-direction: column;
-	}
-
-	.sarahSectionContent .aboutSarah {
-		margin-left: 0;
-		margin-top: -3rem;
-	}
-
-	.sarahSectionContent .sarahPhoto {
-		min-width: initial;
-		width: 80%;
-		height: initial;
-	}
-
-	.features {
-		flex-direction: column;
-	}
-
-	.featureCard {
-		width: 100%;
-		margin: 1rem 0;
-	}
-}
+@media (max-width: 1100px) {
+  .sarahSection .sarahSectionContent {
+    flex-direction: column;
+  }
+  .sarahSection .sarahSectionContent .aboutSarah {
+    margin-left: 0;
+    margin-top: -3rem;
+  }
+  .sarahSection .sarahSectionContent .sarahPhoto {
+    min-width: initial;
+    width: 80%;
+    height: initial;
+  }
+  .featuredServices .features {
+    flex-direction: column;
+  }
+  .featureCard {
+    width: 100%;
+    max-width: 25rem;
+    margin: 1rem auto;
+  }
+}/*# sourceMappingURL=home.css.map */
