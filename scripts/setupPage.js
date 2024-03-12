@@ -1,25 +1,19 @@
 $(document).ready(function() {
 	if ($("#header").length){
 		$("#header").load("components/header.html");
-		$(document).on( "click", function(event) {
-			switch (event.target.id) {
-				case "trainingServicesMenuItem":
-				case "professionalServicesMenuItem":
-					toggleMenuItem($(event.target));
-					break;
-				case "collapsedMenu":
-					toggleMobileMenu();
-					break;
-				default:
-					collapseDropdowns();
+		$(document).click(function(event) { 
+			var $target = $(event.target);
+			if(!$target.closest('#menu').length) {
+				collapseDropdowns();
 			}
-		  } );
+		});
 	}
 	$("#footer").load("components/footer.html");
 	//If home page, hide logo
 });
 
-function toggleMenuItem(menuItemElem) {
+function toggleMenuItem(menuItemId) {
+	let menuItemElem = $("#" + menuItemId);
 	if (menuItemElem.hasClass("selected")){
 		menuItemElem.removeClass("selected");
 	}

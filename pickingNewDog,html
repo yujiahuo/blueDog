@@ -1,0 +1,49 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="scripts/setupPage.js"></script>
+		<script src="scripts/scripts.js"></script>
+		<link rel="stylesheet" href="styles/siteStyles.css">
+		<link rel="stylesheet" href="styles/services.css">
+	</head>
+	<body>
+		<div id="header"></div>
+
+		<div class="pageContent">
+			<div class="breadCrumbs">Training Services > Thing</div>
+			<div class="mainContent">
+				<div class="upperContent">
+					<div class="aboutService">
+						<h1>Thing</h1>
+						<div class="description">At Sarah's</div>
+					</div>
+					<div class="resources">
+						<h2>Resources we like</h2>
+						<a href="#">Something</a>
+						<a href="#">Other thing</a>
+						<a href="#">Some other link</a>
+					</div>
+				</div>
+				<div class="testimonials">
+					<h2>Testimonials</h2>
+					<div class="testimonialGroup">
+						<div class="oneTestimony">
+							
+						</div>
+						<div class="oneTestimony">
+							
+						</div>
+						<div class="oneTestimony">
+							
+						</div>
+						<div class="oneTestimony">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

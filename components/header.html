@@ -1,111 +1,122 @@
 <link rel="stylesheet" href="components/styles/header.css">
+<script src="https://kit.fontawesome.com/d6a302b9c4.js" crossorigin="anonymous"></script>
+
 <div class="header">
-	<div class="initialHeader">
-		<a href="home.html"><img class="logo" src="images/blueDogLogo-white.png"></a>
-		<a href="#" id="collapsedMenu">
-			<img class="hamburgerIcon" src="images/hamburger.svg"/>
+	<a href="home.html" class="logo">
+		<img class="logoImg" src="images/blueDogLogo-white.png">
+	</a>
+
+	<div class="menuGroup">
+		<a href="#" id="mobileMenu" onclick="toggleMobileMenu()">
+			<i class="fa-solid fa-bars"></i>
 		</a>
-	</div>
-	<div id="menu" class="mobileHidden">
-		<a href="#" id="trainingServicesMenuItem" class="menuItem menuItem-1">
-			Training services
-			<img class="chevron" src="images/down-chevron.svg"/>
-		</a>
-		<div id="trainingServicesDropdown" class="menuDropdown menuDropdown-1">
-			<div class="column">
-				<div class="label">For puppies</div>
-				<a href="../puppy-stay-and-train.html">
-					<div>Stay and train</div>
-					<div class="description">Let your new puppy pee in Sarah's house instead of yours</div>
-				</a>
-				<a href="#">
-					<div>New puppy ABCs</div>
-					<div class="description">Set your new puppy up for success in the most critical time period of their life</div>
-				</a>
+	
+		<div id="menu" class="mobileHidden">
+			<a href="#" id="trainingServicesMenuItem" class="menuItem menuItem-1" onclick="toggleMenuItem('trainingServicesMenuItem')">
+				<i class="fa-solid fa-train"></i>
+				Training services
+				<i class="fa-solid fa-sort-down"></i>
+			</a>
+			<div id="trainingServicesDropdown" class="menuDropdown menuDropdown-1">
+				<div class="column">
+					<div class="label">For puppies</div>
+					<a href="../puppyStayAndTrain.html">
+						<div>Stay and train</div>
+						<div class="description">Let your new puppy pee in Sarah's house instead of yours</div>
+					</a>
+					<a href="../newPuppyAbcs.html">
+						<div>New puppy ABCs</div>
+						<div class="description">Set your new puppy up for success in the most critical time period of their life</div>
+					</a>
+				</div>
+				<div class="column">
+					<div class="label">For all dogs</div>
+					<a href="../newDogAbcs.html">
+						<div>New dog ABCs</div>
+						<div class="description">Set your new dog up for success</div>
+					</a>
+					<a href="../behaviorModification.html">
+						<div>Behavior modification</div>
+						<div class="description">Help with problem behaviors</div>
+					</a>
+					<a href="../babyPrep.html">
+						<div>Baby prep</div>
+						<div class="description">Prepare your dog for your new arrival</div>
+					</a>
+					<a href="../skillsTraining.html">
+						<div>Skills training</div>
+						<div class="description">Keep or remove this?</div>
+					</a>
+				</div>
+				<div class="column">
+					<div class="label">Assessments</div>
+					<a href="../temperamentTesting.html">
+						<div>Temperament testing</div>
+						<div class="description">Test temperament</div>
+					</a>
+					<a href="../behaviorAssessment.html">
+						<div>Behavior assessment</div>
+						<div class="description">Give it to me straight. How bad is it?</div>
+					</a>
+					<a href="../pickingNewDog,html">
+						<div>Picking a new dog</div>
+						<div class="description">How not to end up with a Kiwi</div>
+					</a>
+				</div>
 			</div>
-			<div class="column">
-				<div class="label">For all dogs</div>
-				<a href="#">
-					<div>New dog ABCs</div>
-					<div class="description">Set your new dog up for success</div>
-				</a>
-				<a href="#">
-					<div>Behavior modification</div>
-					<div class="description">Help with problem behaviors</div>
-				</a>
-				<a href="#">
-					<div>Baby prep</div>
-					<div class="description">Prepare your dog for your new arrival</div>
-				</a>
-				<a href="#">
-					<div>Skills training</div>
-					<div class="description">Keep or remove this?</div>
-				</a>
+			<a href="#" id="professionalServicesMenuItem" class="menuItem menuItem-2" onclick="toggleMenuItem('professionalServicesMenuItem')">
+				<i class="fa-solid fa-feather-pointed"></i>
+				Professional services
+				<i class="fa-solid fa-sort-down"></i>
+			</a>
+			<div id="professionalServicesDropdown" class="menuDropdown menuDropdown-2">
+				<div class="column">
+					<div class="label">Education</div>
+					<a href="../seminarSpeaker.html">
+						<div>Seminar/webinar speaker</div>
+						<div class="description">International speaker at 100+ seminars</div>
+					</a>
+					<a href="../professionalDevelopment.html">
+						<div>Professional development seminars</div>
+						<div class="description">Need your people to understand how to enter homes with dogs and stuff?</div>
+					</a>
+					<a href="../shelterStaffTraining.html">
+						<div>Shelter staff training</div>
+						<div class="description">Sarah does this too</div>
+					</a>
+					<a href="../mentoring.html">
+						<div>Mentoring</div>
+						<div class="description">Sarah will upload her brain into your brain slowly over time</div>
+					</a>
+				</div>
+				<div class="column">
+					<div class="label">Other</div>
+					<a href="../freelanceWriting.html">
+						<div>Freelance writing</div>
+						<div class="description"></div>
+					</a>
+					<a href="../dogBiteExpertWitness.html">
+						<div>Dog bite expert witness</div>
+						<div class="description"></div>
+					</a>
+					<a href="../mediaInterview.html">
+						<div>Media interview</div>
+						<div class="description"></div>
+					</a>
+				</div>
 			</div>
-			<div class="column">
-				<div class="label">Assessments</div>
-				<a href="#">
-					<div>Temperament testing</div>
-					<div class="description">Test temperament</div>
-				</a>
-				<a href="#">
-					<div>Behavior assessment</div>
-					<div class="description">Give it to me straight. How bad is it?</div>
-				</a>
-				<a href="#">
-					<div>Picking a new dog</div>
-					<div class="description">How not to end up with a Kiwi</div>
-				</a>
-			</div>
+			<a href="../aboutSarah.html" class="menuItem menuItem-4">
+				<i class="fa-solid fa-user-large"></i>
+				About Sarah
+			</a>
+			<a href="../products.html" class="menuItem menuItem-3">
+				<i class="fa-solid fa-tag"></i>
+				Products
+			</a>
 		</div>
-		<a href="#" id="professionalServicesMenuItem" class="menuItem menuItem-2">
-			Professional services
-			<img class="chevron" src="images/down-chevron.svg"/>
-		</a>
-		<div id="professionalServicesDropdown" class="menuDropdown menuDropdown-2">
-			<div class="column">
-				<div class="label">Education</div>
-				<a href="#">
-					<div>Seminar/webinar speaker</div>
-					<div class="description">International speaker at 100+ seminars</div>
-				</a>
-				<a href="#">
-					<div>Professional development seminars</div>
-					<div class="description">Need your people to understand how to enter homes with dogs and stuff?</div>
-				</a>
-				<a href="#">
-					<div>Shelter staff training</div>
-					<div class="description">Sarah does this too</div>
-				</a>
-				<a href="#">
-					<div>Mentoring</div>
-					<div class="description">Sarah will upload her brain into your brain slowly over time</div>
-				</a>
-			</div>
-			<div class="column">
-				<div class="label">Other</div>
-				<a href="#">
-					<div>Freelance writing</div>
-					<div class="description"></div>
-				</a>
-				<a href="#">
-					<div>Dog bite expert witness</div>
-					<div class="description"></div>
-				</a>
-				<a href="#">
-					<div>Media interview</div>
-					<div class="description"></div>
-				</a>
-			</div>
+		<div class="socialMedia">
+			<a href="https://www.instagram.com/sarahkalnajs"><i class="fa fa-instagram"></i></a>
+			<a href="mailto: sarah@bluedogtraining.com"><i class="fa fa-envelope"></i></a>
 		</div>
-		<a href="#" class="menuItem menuItem-4">
-			About Sarah
-		</a>
-		<a href="#" class="menuItem menuItem-3">
-			Products
-		</a>
-		<a href="#" class="menuItem menuItem-5">
-			Contact
-		</a>
 	</div>
 </div>
