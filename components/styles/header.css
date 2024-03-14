@@ -6,7 +6,7 @@
   z-index: 1;
   align-items: center;
   justify-content: space-between;
-  background-color: #383f6b;
+  background-color: #23366d;
 }
 .header .logo {
   width: 15rem;
@@ -34,7 +34,7 @@
 #menu {
   min-width: 50rem;
   height: 3rem;
-  background-color: #383f6b;
+  background-color: #23366d;
 }
 #menu a.menuItem {
   display: inline-flex;
@@ -45,13 +45,13 @@
   font-weight: 500;
 }
 #menu a.menuItem:hover, #menu a.menuItem.selected {
-  background-color: #282e50;
+  background-color: #0c1f55;
 }
 #menu a.menuItem.selected + .menuDropdown {
   display: flex;
 }
 #menu .menuDropdown {
-  background-color: #282e50;
+  background-color: #0c1f55;
   display: none;
   position: absolute;
   padding: 0.5rem;
@@ -70,9 +70,9 @@
   text-decoration: none;
   padding: 0.3rem;
   display: block;
-  color: #c4d5f5;
+  color: #72d7f8;
 }
-#menu .menuDropdown a :hover {
+#menu .menuDropdown a:hover {
   background-color: #383f6b;
 }
 #menu .menuDropdown .column {

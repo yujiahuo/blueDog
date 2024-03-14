@@ -1,6 +1,17 @@
+.banner {
+  background: linear-gradient(rgba(0, 40, 75, 0.6), rgba(0, 40, 75, 0.6)), url("../images/bonePattern.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+.banner h2 {
+  color: white;
+}
+
 .sarahSection {
   padding: 2rem 10%;
-  background-color: #daeeff;
+  background-color: #dbeeff;
   background-size: 25rem;
 }
 .sarahSection .sarahSectionContent {
@@ -25,15 +36,20 @@
   margin-left: 3rem;
   max-width: 50rem;
 }
+.sarahSection .dogSilhouette {
+  position: absolute;
+  right: 5rem;
+  opacity: 0.2;
+  height: 42rem;
+}
 
 .featuredServices {
-  background-color: #72d7f8;
+  background-color: #dbeeff;
   text-align: center;
   padding: 1rem;
 }
 .featuredServices .featuredHeader,
 .featuredServices .featuredHeader h2 {
-  color: white;
   font-size: 2rem;
   font-weight: 500;
   display: inline;
@@ -48,7 +64,7 @@
 
 .featureCard {
   position: relative;
-  width: 20rem;
+  width: 23rem;
   border-radius: 0.5rem;
   border: 2px solid white;
   text-align: center;

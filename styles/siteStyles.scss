@@ -1,3 +1,5 @@
+@import "./theme";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +8,12 @@
 }
 
 h1 {
-	color: #1f80d5;
+	color: $themeDarkerer;
     font-weight: 400;
 }
 
 h2 {
-	color: #3d9bed;
-	font-size: 2rem;
+	color: $themeDarker;
 	font-weight: 400;
 }
 
@@ -52,7 +53,7 @@ p + * {
 
 .description {
 	font-size: 13px;
-	color: #464646;
+	color: $darkGray;
 	font-style: italic;
 	margin-bottom: 0.5rem;
 }
@@ -61,8 +62,8 @@ a.button {
 	padding: 0.5rem;
     width: fit-content;
     display: block;
-    background-color: #e5f8ff;
-    border: 1px solid #72d7f8;
+    background-color: $lightBG;
+    border: 1px solid $themePrimary;
     border-radius: 0.2rem;
     text-decoration: none;
 
@@ -77,7 +78,7 @@ i {
 
 .waveContainer {
 	height: 5rem;
-	background-color: #daeeff;
+	background-color: $lightBG;
 	position: relative;
 
 	&::before {
@@ -92,6 +93,10 @@ i {
 		background-position: 3vw bottom;
 		background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2372d7f8'/></svg>");
 	}
+}
+
+ul {
+	padding-left: 1rem;
 }
   
 @media(max-width:850px) {

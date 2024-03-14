@@ -1,3 +1,5 @@
+@import "../../styles/theme";
+
 .header {
 	position: relative;
 	width: 100%;
@@ -6,7 +8,7 @@
 	z-index: 1;
 	align-items: center;
 	justify-content: space-between;
-	background-color:#383f6b;
+	background-color: $headerPrimaryBG;
 
 	.logo {
 		width: 15rem;
@@ -24,11 +26,11 @@
 		justify-content: flex-end;
 		align-items: center;
 		margin: 0 1rem;
-		color: #72d7f8;
+		color: $themePrimary;
 		font-size: 1.1rem;
 	
 		a {
-			color: #72d7f8;
+			color: $themePrimary;
 			text-decoration: none;
 		}
 	}
@@ -37,7 +39,7 @@
 #menu {
 	min-width: 50rem;
 	height: 3rem;
-	background-color:#383f6b;
+	background-color: $headerPrimaryBG;
 
 	a.menuItem {
 		display: inline-flex;
@@ -49,7 +51,7 @@
 
 		&:hover,
 		&.selected {
-			background-color:#282e50;
+			background-color:$headerSecondaryBG;
 		}
 
 		&.selected + .menuDropdown {
@@ -59,7 +61,7 @@
 
 	.menuDropdown
 	{
-		background-color:#282e50;
+		background-color:$headerSecondaryBG;
 		display: none;
 		position: absolute;
 		padding: 0.5rem;
@@ -69,21 +71,21 @@
 			color: #eeeeee;
 			font-size: 14px;
 			margin: 0.3rem;
-			border-bottom: 1px dashed #cecece;
+			border-bottom: 1px dashed $lightGray;
 		}
 
 		.description {
-			color: #cecece;
+			color: $lightGray;
 		}
 
 		a {
 			text-decoration: none;
 			padding: 0.3rem;
 			display: block;
-			color: #c4d5f5;
+			color: $themePrimary;
 
-			:hover {
-				background-color: #383f6b;
+			&:hover {
+				background-color: $headerTertiaryBG;
 			}
 		}
 
@@ -99,7 +101,7 @@
 
 #mobileMenu {
 	display: none;
-	color: #72d7f8;
+	color: $themePrimary;
 
 	i {
 		font-size: 32px;
@@ -115,7 +117,7 @@
 	margin-left: 1rem;
 
 	a:hover {
-		color: #a9eaff;
+		color: $themeLighter;
 	}
 }
 
