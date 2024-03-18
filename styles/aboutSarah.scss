@@ -1,0 +1,20 @@
+.bg {
+	background-repeat: no-repeat;
+    background-position: top right;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 55%, rgba(255, 255, 255, 0) 72%), url(../images/SarahInVeryRealDanger.png);
+    height: 100%;
+    width: 100%;
+	position: fixed;
+}
+
+.mainContent {
+	text-align: center;
+	padding: 3rem;
+}
+
+.aboutSection {
+	width: 50%;
+	margin-left: 20%;
+	margin-top: 2rem;
+	text-align: left;
+}
