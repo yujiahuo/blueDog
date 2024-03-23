@@ -1,28 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui;
+  font-family: sans-serif;
   box-sizing: border-box;
 }
 
-#header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+h1, h2, h3 {
+  font-family: "Pompiere", sans-serif;
 }
 
-h1 {
-  color: #1c6fb8;
-  font-weight: 400;
-}
-
-h2 {
-  color: #3d9bed;
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 400;
+p {
+  color: #272727;
 }
 
 /* Gives some spacing between text things */
@@ -53,6 +41,36 @@ p + * {
   padding: 1.5rem;
 }
 
+.coloredCard {
+  border: 2px dashed gray;
+}
+.coloredCard .top {
+  background-color: #3e8bcf;
+  padding: 0.5rem 1rem;
+}
+.coloredCard .top h2 {
+  color: white;
+  font-size: 3rem;
+}
+.coloredCard .top .description {
+  color: white;
+}
+.coloredCard .content {
+  background-color: #b5deff;
+  padding: 1rem;
+}
+.coloredCard .content h3 {
+  background-color: #eaf2ff;
+  padding: 0 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: -1rem;
+}
+.coloredCard .content p {
+  margin-top: 0.5rem;
+}
+
 .description {
   font-size: 13px;
   color: #464646;
@@ -65,10 +83,12 @@ a.button {
   width: -moz-fit-content;
   width: fit-content;
   display: block;
-  background-color: #dbeeff;
-  border: 1px solid #72d7f8;
-  border-radius: 0.2rem;
+  background-color: #3d9bed;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
   text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 a.button :visited {
   color: inherit;
