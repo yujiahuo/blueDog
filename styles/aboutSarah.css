@@ -1,38 +1,175 @@
-#header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
+@charset "UTF-8";
+body {
+  background-color: aliceblue;
 }
 
-h1 {
-  font-size: 5rem;
+.pageContent {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 13rem auto auto;
 }
 
-.bioWords {
-  display: flex;
-  justify-content: space-evenly;
-  width: 45%;
+.headingArea {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  text-align: center;
+  padding: 0 1rem;
+  text-wrap: nowrap;
+}
+.headingArea h1 {
+  font-size: 4rem;
+}
+.headingArea .bioWords {
+  width: 100%;
   margin: auto;
   color: #1c6fb8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.headingArea .bioWords span + span {
+  margin-left: 2rem;
+}
+.headingArea .bioWords span + span::before {
+  content: "•";
+  margin-right: 2rem;
+}
+.headingArea .bioWords span {
+  text-wrap: nowrap;
 }
 
-.bg {
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-image: linear-gradient(to right, rgb(255, 255, 255) 55%, rgba(255, 255, 255, 0) 72%), url(../images/SarahInVeryRealDanger.png);
-  height: 100%;
+.sarahPhoto {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  align-self: center;
+  position: relative;
+  margin: 4rem;
+}
+.sarahPhoto .mat {
   width: 100%;
-  position: fixed;
+  height: 100%;
+  position: absolute;
 }
-
-.mainContent {
-  text-align: center;
-  padding: 3rem;
+.sarahPhoto .mat.darkMat {
+  transform: rotate(-10deg);
+  background: #3e8bcf;
+}
+.sarahPhoto .mat.lightMat {
+  transform: rotate(8deg);
+  background: #dbeeff;
+}
+.sarahPhoto img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .aboutSection {
-  width: 50%;
-  margin-left: 20%;
-  margin-top: 2rem;
-  text-align: left;
+  grid-column: 1;
+  grid-row: 2;
+}
+.aboutSection .aboutContent {
+  text-align: center;
+  padding: 0 4rem;
+}
+.aboutSection .aboutContent .iconsContainer a {
+  color: #1c6fb8;
+}
+
+.qualifications {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 1rem;
+}
+.qualifications .qualificationIcons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.qualifications .qualificationIcons .circleCard {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qualifications .qualificationIcons .circleCard img {
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.experience {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.photosRow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.photosRow img {
+  width: 20%;
+  margin: 1rem;
+}
+
+.border {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: 1px dashed #464646;
+}
+
+@media (max-width: 1500px) {
+  .pageContent {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .pageContent {
+    display: block;
+  }
+  .headingArea h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .headingArea .bioWords span + span {
+    margin-left: 1rem;
+  }
+  .headingArea .bioWords span + span::before {
+    margin-right: 1rem;
+  }
+  .sarahPhoto {
+    margin: 3rem 1rem;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+  .sarahPhoto img {
+    height: initial;
+  }
+  .aboutSection .aboutContent {
+    padding: 0 2rem;
+  }
+  .qualifications {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .qualifications .qualificationIcons .circleCard {
+    margin: 0.5rem;
+  }
+  .border {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photosRow img {
+    width: 40%;
+  }
 }/*# sourceMappingURL=aboutSarah.css.map */

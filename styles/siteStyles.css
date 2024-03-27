@@ -21,8 +21,8 @@ h3 + * {
 }
 
 .callOutText {
-  font-size: 1.5rem;
-  color: #1c6fb8;
+  font-size: 1.25rem;
+  color: #464646;
   font-family: "Swanky and Moo Moo", cursive;
 }
 
@@ -114,5 +114,8 @@ ul {
 @media (max-width: 850px) {
   .waveContainer::before {
     height: 38.5px;
+  }
+  .mobileHide {
+    display: none;
   }
 }/*# sourceMappingURL=siteStyles.css.map */

@@ -24,8 +24,8 @@ h3 + * {
 }
 
 .callOutText {
-	font-size: 1.5rem;
-	color: $themeDarkerer;
+	font-size: 1.25rem;
+	color: $darkGray;
 	font-family: "Swanky and Moo Moo", cursive;
 }
 
@@ -125,4 +125,8 @@ ul {
 	.waveContainer::before {    
 		height: 38.5px
 	}  
+
+	.mobileHide {
+		display: none;
+	}	
 }
