@@ -4,6 +4,18 @@
   z-index: 5;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
+.bioWords {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  margin: auto;
+  color: #1c6fb8;
+}
+
 .bg {
   background-repeat: no-repeat;
   background-position: top right;

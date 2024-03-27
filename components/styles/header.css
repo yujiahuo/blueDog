@@ -51,6 +51,10 @@
 #menu a.menuItem.selected + .menuDropdown {
   display: flex;
 }
+#menu a.menuItem .fa-sort-down {
+  position: relative;
+  top: -3px;
+}
 #menu .menuDropdown {
   background-color: #0c1f55;
   display: none;

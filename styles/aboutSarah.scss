@@ -1,7 +1,21 @@
+@import "./theme";
+
 #header {
 	position: sticky;
 	top: 0;
 	z-index: 5;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+.bioWords {
+	display: flex;
+	justify-content: space-evenly;
+	width: 45%;
+    margin: auto;
+	color: $themeDarkerer;
 }
 
 .bg {

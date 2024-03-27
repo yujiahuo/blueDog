@@ -3,12 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-	font-family: sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	box-sizing: border-box;
 }
 
 h1, h2, h3 {
-	font-family: "Pompiere", sans-serif;
+	font-family: "Rosarivo", cursive;
+	font-weight: 400;
+	color: $themeDarkerer;
 }
 
 p {
@@ -19,6 +21,12 @@ p {
 
 h3 + * {
 	margin-top: 1rem;
+}
+
+.callOutText {
+	font-size: 1.5rem;
+	color: $themeDarkerer;
+	font-family: "Swanky and Moo Moo", cursive;
 }
 
 p + * {
@@ -71,6 +79,8 @@ p + * {
 			width: fit-content;
 			position: relative;
 			left: -1rem; // make header bg line up with edge of card
+			padding-top: 2px;
+
 		}
 
 		p {
@@ -105,25 +115,6 @@ a.button {
 
 i {
 	padding: 0 0.5rem;
-}
-
-.waveContainer {
-	height: 5rem;
-	background-color: $lightBG;
-	position: relative;
-
-	&::before {
-		content: "";
-		width: 100%;
-		height: 77px;
-		position: absolute;
-		bottom: -0.3%;
-		left: 0;
-		background-size: auto;
-		background-repeat: repeat no-repeat;
-		background-position: 3vw bottom;
-		background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%2372d7f8'/></svg>");
-	}
 }
 
 ul {

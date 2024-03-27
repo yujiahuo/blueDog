@@ -58,6 +58,11 @@
 		&.selected + .menuDropdown {
 			display: flex;
 		}
+
+		.fa-sort-down {
+			position: relative;
+			top: -3px;
+		}
 	}
 
 	.menuDropdown

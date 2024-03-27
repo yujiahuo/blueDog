@@ -2,7 +2,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/bonePattern.jpg");
   background-size: cover;
   text-align: center;
-  padding: 2rem;
+  padding: 9rem 2rem 2rem 2rem;
+  z-index: -1;
 }
 .banner h2 {
   font-size: 2.5rem;
@@ -17,10 +18,15 @@
   padding: 0.5rem 1rem;
   line-height: 1.5rem;
 }
+.banner .wave {
+  position: absolute;
+  left: 0;
+  top: -7.5rem;
+}
 
 .sarahSection {
-  padding: 2rem 10%;
-  background-color: #fff6c7;
+  padding: 2rem 20%;
+  background-color: #dbeeff;
 }
 .sarahSection .sarahSectionContent {
   display: flex;
@@ -39,7 +45,7 @@
 }
 .sarahSection .sarahSectionContent .aboutSarah {
   position: relative;
-  margin-left: 3rem;
+  margin-left: -6rem;
   max-width: 50rem;
 }
 .sarahSection .dogSilhouette {
@@ -49,94 +55,55 @@
   height: 42rem;
 }
 
-.featuredServices {
-  background-color: #dbeeff;
-  text-align: center;
-  padding: 1rem;
-}
-.featuredServices .featuredHeader,
-.featuredServices .featuredHeader h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  display: inline;
-}
-.featuredServices .fa-bullhorn:first-child {
-  transform: scaleX(-1);
-}
-.featuredServices .features {
+.featuredService {
   display: flex;
-  justify-content: space-evenly;
 }
-
-.featureCard {
+.featuredService.feature-1 {
+  background-color: #dbeeff;
+}
+.featuredService.feature-2 {
+  background-color: #c7fadd;
+}
+.featuredService .serviceImageContainer {
+  width: 35%;
+  max-height: 30rem;
+  overflow: hidden;
+}
+.featuredService .serviceImageContainer img {
   position: relative;
-  width: 23rem;
-  border-radius: 0.5rem;
-  border: 5px solid white;
-  text-align: center;
-  margin: 1rem;
+  top: -5rem;
+  width: 100%;
+}
+.featuredService .serviceContent {
+  padding: 2rem;
+  width: 65%;
+}
+.featuredService .serviceContent h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.featuredService .serviceContent .checkboxTable {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 9rem;
+  width: 20rem;
 }
-.featureCard h3 {
-  font-size: 2rem;
+.featuredService .serviceContent .checkboxTable .checkItem {
+  max-width: 14rem;
+  height: 2rem;
 }
-.featureCard .button {
-  margin-left: auto;
-  margin-right: auto;
-}
-.featureCard .featureImg {
-  width: 100%;
-  height: 12rem;
-  overflow-y: hidden;
-}
-.featureCard .featureImg img {
-  width: 100%;
-  border-radius: 0.5rem;
-}
-.featureCard .featureContent {
-  padding: 1rem;
-  flex-grow: 1;
-}
-.featureCard .learnMore {
-  padding: 1rem;
-}
-.featureCard.featured-1 {
-  background-color: #fff0fe;
-}
-.featureCard.featured-1 h3 {
-  color: #a16c9e;
-}
-.featureCard.featured-2 {
-  background-color: #daeeff;
-}
-.featureCard.featured-2 h3 {
-  color: #466f92;
-}
-.featureCard.featured-3 {
-  background-color: #c6ffe4;
-}
-.featureCard.featured-3 h3 {
-  color: #3f916b;
-}
-.featureCard.featured-4 {
-  background-color: #ffecd4;
-}
-.featureCard.featured-4 h3 {
-  color: #b96a09;
+.featuredService .serviceContent .checkboxTable .checkItem i {
+  color: #1c6fb8;
 }
 
 .reviewsSection {
-  height: 25rem;
   background-color: white;
 }
-
-/* color override on wave from siteStyles */
-.waveContainer.secondWave {
-  background-color: #72d7f8;
-}
-.waveContainer.secondWave::before {
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23FFFFFF'/></svg>");
+.reviewsSection .hello {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 @media (max-width: 1100px) {
@@ -152,12 +119,21 @@
     width: 80%;
     height: initial;
   }
-  .featuredServices .features {
+  .featuredService {
     flex-direction: column;
+  }
+  .featuredService .serviceImageContainer {
+    width: 100%;
+  }
+  .featuredService .serviceContent {
+    width: 100%;
   }
   .featureCard {
     width: 100%;
     max-width: 25rem;
     margin: 1rem auto;
+  }
+  .reviewsSection {
+    display: none;
   }
 }/*# sourceMappingURL=home.css.map */
