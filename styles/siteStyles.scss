@@ -46,6 +46,16 @@ p + * {
 	position: relative;
 }
 
+.swoop {
+	background-color: $lightBG;
+    position: absolute;
+    width: 120%;
+	left: -10%;
+    top: 8rem;
+    height: 9rem;
+	border-radius: 0 0 50% 50%;
+}
+
 .card {
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -53,8 +63,8 @@ p + * {
 }
 
 .coloredCard {
-	border: 2px dashed gray;
-
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
 	.top {
 		background-color: $mediumDarkBG;
 		padding: 0.5rem 1rem;
@@ -97,8 +107,6 @@ p + * {
 }
 
 a.button {
-	padding: 0.5rem;
-    width: -moz-fit-content;
     width: fit-content;
     display: block;
     background-color: $themeDarker;
@@ -118,8 +126,39 @@ i {
 }
 
 ul {
-	padding-left: 1rem;
+	padding-left: 1rem; //get rid of the default indentation
+
+	li {
+		margin-bottom: 0.3rem //a bit of space between each list item
+	}
 }
+
+.photoWithMat {
+	position: relative;
+
+	.mat {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		
+		&.darkMat {
+			transform: rotate(-10deg);
+			background: $mediumDarkBG;
+		}
+	
+		&.lightMat {
+			transform: rotate(8deg);
+			background: $lightBG;
+		}
+	}
+
+	img {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
+}
+
   
 @media(max-width:850px) {
 	.waveContainer::before {    

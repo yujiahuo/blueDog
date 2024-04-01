@@ -49,29 +49,13 @@ body {
 	}
 }
 
-.sarahPhoto {
+.photoWithMat {
 	grid-column: 2;
 	grid-row: 1 / span 2;
 	align-self: center;
 	position: relative;
 	margin: 4rem;
 	
-	.mat {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		
-		&.darkMat {
-			transform: rotate(-10deg);
-			background: $mediumDarkBG;
-		}
-
-		&.lightMat {
-			transform: rotate(8deg);
-			background: $lightBG;
-		}
-	}
-
 	img {
 		width: 100%;
 		position: relative;
@@ -101,6 +85,8 @@ body {
 	grid-row: 3;
 
 	padding: 1rem;
+	max-width: 30rem;
+	margin: auto;
 	
 	.qualificationIcons {
 		display: flex;
@@ -128,6 +114,10 @@ body {
 .experience {
 	grid-column: 1;
 	grid-row: 3;
+
+	.experienceSection {
+		margin-bottom: 2rem;
+	}
 }
 
 .photosRow {
@@ -135,9 +125,15 @@ body {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 
-	img {
-		width: 20%;
-		margin: 1rem;
+	.photo {
+		width: 10rem;
+		height: 10rem;
+		overflow: hidden;
+		margin: 0.5rem;
+
+		img {
+			width: 100%;
+		}
 	}
 }
 
@@ -176,7 +172,7 @@ body {
 		}
 	}
 	
-	.sarahPhoto {
+	.photoWithMat {
 		margin: 3rem 1rem;
 		padding: 0;
 		height: auto;
@@ -202,9 +198,6 @@ body {
 				margin: 0.5rem;
 			}
 		}
-	}
-	
-	.experience {
 	}
 
 	.border {

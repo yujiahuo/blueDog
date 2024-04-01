@@ -1,44 +1,64 @@
 .pageContent {
-  padding: 2rem;
+  display: grid;
+  margin-left: 5%;
+  grid-template-columns: 30% 30% 15%;
+  grid-template-rows: auto auto auto;
 }
-.pageContent h2 {
+
+.headingArea {
+  grid-column: 2/span 2;
+  grid-row: 1;
+  padding: 3rem 0;
+}
+.headingArea h1 {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.pageContent .breadCrumbs {
-  margin-bottom: 1rem;
-}
-.pageContent .mainContent {
-  width: 75%;
-  margin-left: 20%;
-}
-
-.upperContent {
+.headingArea .quickInfo {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  color: #464646;
 }
-.upperContent .aboutService {
-  max-width: 50rem;
-  margin-bottom: 2rem;
-}
-.upperContent .resources {
-  max-width: 20rem;
-}
-.upperContent .resources a {
-  display: block;
-  margin-bottom: 1rem;
+.headingArea .quickInfo .fa-solid {
+  padding-left: 0;
 }
 
-.testimonialGroup {
+.photoAndPhone {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 4rem;
+}
+.photoAndPhone .callButton {
+  width: 100%;
+  margin-top: 3rem;
+}
+.photoAndPhone .callButton a.button {
+  margin: auto;
+  text-align: center;
+}
+
+.aboutSection {
+  grid-column: 2/span 2;
+  grid-row: 2;
+  margin-bottom: 4rem;
+}
+
+.testimonials {
+  grid-column: 1/span 2;
+  grid-row: 3;
+}
+.testimonials .testimonialGroup {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 45rem;
+  max-height: 50rem;
   width: 100%;
 }
-.testimonialGroup .oneTestimony {
+.testimonials .testimonialGroup .oneTestimony {
   background-color: #dfecf8;
-  width: 50%;
-  min-width: 35rem;
+  max-width: 47%;
+  min-width: 27rem;
   padding: 1rem;
   color: #464646;
   font-style: italic;
@@ -46,19 +66,22 @@
   margin-right: 1rem;
 }
 
+.resources {
+  grid-column: 3;
+  grid-row: 3;
+  max-width: 20rem;
+}
+.resources a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1460px) {
-  .upperContent {
-    flex-direction: column;
-  }
   .testimonialGroup {
     flex-wrap: nowrap;
   }
 }
 @media (max-width: 768px) {
-  .pageContent .mainContent {
-    margin: 0;
-    width: 100%;
-  }
   .testimonialGroup {
     max-height: none;
   }
