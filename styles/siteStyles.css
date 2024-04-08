@@ -6,7 +6,7 @@
 }
 
 h1, h2, h3 {
-  font-family: "Rosarivo", cursive;
+  font-family: "Handlee", cursive;
   font-weight: 400;
   color: #1c6fb8;
 }
@@ -48,8 +48,8 @@ p + * {
   position: absolute;
   width: 120%;
   left: -10%;
-  top: 8rem;
-  height: 9rem;
+  z-index: -1;
+  height: 100%;
   border-radius: 0 0 50% 50%;
 }
 
@@ -60,34 +60,19 @@ p + * {
 }
 
 .coloredCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
-.coloredCard .top {
-  background-color: #3e8bcf;
-  padding: 0.5rem 1rem;
-}
-.coloredCard .top h2 {
-  color: white;
+.coloredCard h2 {
   font-size: 3rem;
 }
-.coloredCard .top .description {
-  color: white;
-}
 .coloredCard .content {
-  background-color: #b5deff;
-  padding: 1rem;
-}
-.coloredCard .content h3 {
-  background-color: #eaf2ff;
-  padding: 0 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  left: -1rem;
-  padding-top: 2px;
+  padding: 1rem 0;
 }
 .coloredCard .content p {
   margin-top: 0.5rem;
+}
+.coloredCard .content .button {
+  float: right;
 }
 
 .description {
@@ -97,11 +82,17 @@ p + * {
   margin-bottom: 0.5rem;
 }
 
+.border {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: 1px dashed #464646;
+}
+
 a.button {
   width: -moz-fit-content;
   width: fit-content;
   display: block;
-  background-color: #3d9bed;
+  background-color: #1c6fb8;
   border-radius: 0.5rem;
   padding: 0.75rem;
   text-decoration: none;
@@ -133,11 +124,11 @@ ul li {
 }
 .photoWithMat .mat.darkMat {
   transform: rotate(-10deg);
-  background: #3e8bcf;
+  background: #1c6fb8;
 }
 .photoWithMat .mat.lightMat {
   transform: rotate(8deg);
-  background: #dbeeff;
+  background: #b5deff;
 }
 .photoWithMat img {
   position: relative;
@@ -150,6 +141,11 @@ ul li {
     height: 38.5px;
   }
   .mobileHide {
+    display: none;
+  }
+}
+@media (min-width: 851px) {
+  .mobileOnly {
     display: none;
   }
 }/*# sourceMappingURL=siteStyles.css.map */

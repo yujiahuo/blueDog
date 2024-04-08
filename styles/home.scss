@@ -40,18 +40,14 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-image: url(../images/SarahWithDogs.png);
-		background-size: 62rem;
-		background-position-y: -1rem;
-		background-repeat: no-repeat;
 
 		&::after {
 			content:""; 
 			position: absolute; 
 			bottom: 0;
-			left: 39rem;
+			left: 20rem;
 			right: 0;
-			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(226, 238, 255) 17%);
+			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(43 43 43) 35%);
 			height: 100%;
 			height: 100%;
 			width: 100%;
@@ -68,11 +64,26 @@
 		position: relative;
 		float: right;
 		max-width: 50rem;
+		background-color: $lightBG;
+		border-radius: 0 130px;
+		padding: 2rem;
+
+		.border {
+			margin: 0.5rem 0;
+		}
+
+		h3 {
+			font-weight: 600;
+		}
 	}
 }
 
 .featuredService {
 	display: flex;
+
+	.border {
+		margin: 0.5rem 0;
+	}
 
 	&.feature-1 .serviceContent {
 		background-color: #f3c5ff;

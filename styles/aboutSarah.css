@@ -117,12 +117,6 @@ body {
   width: 100%;
 }
 
-.border {
-  width: 100%;
-  margin: 2rem 0;
-  border-bottom: 1px dashed #464646;
-}
-
 @media (max-width: 1500px) {
   .pageContent {
     width: 100%;
