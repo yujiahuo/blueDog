@@ -1,12 +1,12 @@
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../images/bonePattern.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(0, 21, 39, 0.8117647059), rgba(0, 21, 39, 0.8117647059)), url(../images/dotted.jpg);
+  background-size: 130%;
+  background-position-x: -13rem;
+  background-position-y: 60%;
   text-align: center;
   padding: 2rem;
-  z-index: -1;
 }
-.banner h2 {
-  font-size: 2.5rem;
+.banner h1 {
   color: white;
 }
 .banner p {
@@ -39,9 +39,9 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 20rem;
+  left: 46rem;
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(43, 43, 43) 35%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
   height: 100%;
   height: 100%;
   width: 100%;
@@ -62,37 +62,57 @@
 .sarahSection .aboutSarah .border {
   margin: 0.5rem 0;
 }
-.sarahSection .aboutSarah h3 {
+.sarahSection .aboutSarah h2 {
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.featuredService {
-  display: flex;
+.featuredSection {
+  padding: 1rem;
 }
-.featuredService .border {
+.featuredSection h1 {
+  text-align: center;
+  padding: 2rem;
+}
+.featuredSection .featuredService {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.featuredSection .featuredService .border {
   margin: 0.5rem 0;
 }
-.featuredService.feature-1 .serviceContent {
+.featuredSection .featuredService.feature-1 .serviceContent {
   background-color: #f3c5ff;
 }
-.featuredService.feature-1 .serviceContent h2, .featuredService.feature-1 .serviceContent i {
+.featuredSection .featuredService.feature-1 .serviceContent h2, .featuredSection .featuredService.feature-1 .serviceContent i {
   color: #a04ab6;
 }
-.featuredService.feature-2 .serviceContent {
+.featuredSection .featuredService.feature-2 .serviceContent {
   background-color: #c7fadd;
 }
-.featuredService.feature-2 .serviceContent h2 {
+.featuredSection .featuredService.feature-2 .serviceContent h2 {
   color: #249454;
 }
-.featuredService .serviceImageContainer {
-  width: 35%;
+.featuredSection .featuredService.feature-3 .serviceContent {
+  background-color: #fae0c7;
+}
+.featuredSection .featuredService.feature-3 .serviceContent h2 {
+  color: #cc7c32;
+}
+.featuredSection .featuredService .serviceImageContainer {
+  width: 40%;
   max-height: 30rem;
   overflow: hidden;
 }
-.featuredService .serviceImageContainer img {
+.featuredSection .featuredService .serviceImageContainer img {
   width: 100%;
 }
-.featuredService .serviceContent {
+.featuredSection .featuredService .serviceContent {
   padding: 2rem;
   width: 65%;
   background-image: url("../images/polkaDotBg.png");
@@ -100,27 +120,27 @@
   display: flex;
   flex-direction: column;
 }
-.featuredService .serviceContent h2 {
+.featuredSection .featuredService .serviceContent h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
-.featuredService .serviceContent .checkboxTable {
+.featuredSection .featuredService .serviceContent .checkboxTable {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 9rem;
+  max-height: 7rem;
   width: 20rem;
 }
-.featuredService .serviceContent .checkboxTable .checkItem {
+.featuredSection .featuredService .serviceContent .checkboxTable .checkItem {
   max-width: 14rem;
   height: 2rem;
 }
-.featuredService .serviceContent .blurb {
+.featuredSection .featuredService .serviceContent .blurb {
   height: 100%;
   max-width: 50rem;
 }
-.featuredService .serviceContent .button {
+.featuredSection .featuredService .serviceContent .button {
   float: right;
 }
 
@@ -134,33 +154,41 @@
 }
 
 @media (max-width: 1100px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
   .sarahSection .aboutSarah {
     left: 0;
     margin: 20rem 0 3rem 0;
+    border-radius: 0 50px;
+  }
+  .sarahSection .sarahPhoto {
+    min-height: 19rem;
   }
   .sarahSection .sarahPhoto::after {
     left: 0;
-    top: 21rem;
+    top: 16rem;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(226, 238, 255) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
   }
   .sarahSection .sarahPhoto img {
     width: 100%;
     top: -3rem;
   }
-  .featuredService {
+  .featuredSection .featuredService {
     flex-direction: column;
   }
-  .featuredService .serviceImageContainer {
+  .featuredSection .featuredService.feature-2 {
+    flex-direction: column-reverse;
+  }
+  .featuredSection .featuredService .serviceImageContainer {
     width: 100%;
   }
-  .featuredService .serviceContent {
+  .featuredSection .featuredService .serviceContent {
     width: 100%;
   }
-  .featureCard {
-    width: 100%;
-    max-width: 25rem;
-    margin: 1rem auto;
+  .featuredSection .featuredService .buttonContainer {
+    padding-top: 1rem;
   }
   .reviewsSection {
     display: none;

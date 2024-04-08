@@ -1,14 +1,14 @@
 @import "./theme";
 
 .banner {
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("../images/bonePattern.jpg");
-	background-size: cover;
-	text-align: center;
-	padding: 2rem;
-	z-index: -1; //ensures wave goes below previous section
+	background: linear-gradient(#001527cf, #001527cf), url(../images/dotted.jpg);
+    background-size: 130%;
+    background-position-x: -13rem;
+    background-position-y: 60%;
+    text-align: center;
+    padding: 2rem;
 
-	h2 {
-		font-size: 2.5rem;
+	h1 {
 		color: white;
 	}
 
@@ -45,9 +45,9 @@
 			content:""; 
 			position: absolute; 
 			bottom: 0;
-			left: 20rem;
+			left: 46rem;
 			right: 0;
-			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(43 43 43) 35%);
+			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
 			height: 100%;
 			height: 100%;
 			width: 100%;
@@ -72,82 +72,108 @@
 			margin: 0.5rem 0;
 		}
 
-		h3 {
+		h2 {
+			font-size: 1rem;
 			font-weight: 600;
 		}
 	}
 }
 
-.featuredService {
-	display: flex;
+.featuredSection {
+	padding: 1rem;
 
-	.border {
-		margin: 0.5rem 0;
-	}
-
-	&.feature-1 .serviceContent {
-		background-color: #f3c5ff;
-
-		h2, i {
-			color: #a04ab6;
-		}
-	}
-
-	&.feature-2 .serviceContent {
-		background-color: #c7fadd;
-
-		h2 {
-			color: #249454;
-		}
-	}
-
-	.serviceImageContainer {
-		width: 35%;
-    	max-height: 30rem;
-		overflow: hidden;
-
-		img {
-			width: 100%;
-		}
-	}
-
-	.serviceContent {
+	h1 {
+		text-align: center;
 		padding: 2rem;
-		width: 65%;
-		background-image: url('../images/polkaDotBg.png');
-		background-size: cover;
+	}
+	
+
+	.featuredService {
 		display: flex;
-		flex-direction: column;
-
-		h2 {
-			font-size: 2rem;
-			margin-bottom: 0.5rem;
-			font-weight: 700;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 2rem;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+		border-radius: 1rem;
+		overflow: hidden;
+	
+		.border {
+			margin: 0.5rem 0;
 		}
-
-		.checkboxTable {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			max-height: 9rem;
-			width: 20rem;
-
-			.checkItem {
-				max-width: 14rem;
-				height: 2rem;
+	
+		&.feature-1 .serviceContent {
+			background-color: #f3c5ff;
+	
+			h2, i {
+				color: #a04ab6;
+			}
+		}
+	
+		&.feature-2 .serviceContent {
+			background-color: #c7fadd;
+	
+			h2 {
+				color: #249454;
 			}
 		}
 
-		.blurb {
-			height: 100%;
-			max-width: 50rem;
+		&.feature-3 .serviceContent {
+			background-color: #fae0c7;
+	
+			h2 {
+				color: #cc7c32;
+			}
 		}
-
-		.button {
-			float: right;
+	
+		.serviceImageContainer {
+			width: 40%;
+			max-height: 30rem;
+			overflow: hidden;
+	
+			img {
+				width: 100%;
+			}
+		}
+	
+		.serviceContent {
+			padding: 2rem;
+			width: 65%;
+			background-image: url('../images/polkaDotBg.png');
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+	
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 0.5rem;
+				font-weight: 700;
+			}
+	
+			.checkboxTable {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				max-height: 7rem;
+				width: 20rem;
+	
+				.checkItem {
+					max-width: 14rem;
+					height: 2rem;
+				}
+			}
+	
+			.blurb {
+				height: 100%;
+				max-width: 50rem;
+			}
+	
+			.button {
+				float: right;
+			}
 		}
 	}
 }
+
 
 .reviewsSection {
 	background-color: white;
@@ -159,18 +185,27 @@
 }
 
 @media (max-width: 1100px) {
+	.banner {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
 	.sarahSection{
 		.aboutSarah {
 			left: 0;
 			margin: 20rem 0 3rem 0;
+			border-radius: 0 50px;
 		}
 	
 		.sarahPhoto {
+			min-height: 19rem;
+
 			&::after {
 				left: 0;
-				top: 21rem;
+				top: 16rem;
 				height: 100%;
-				background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(226, 238, 255) 100%);
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
 			}
 
 			img {
@@ -180,25 +215,28 @@
 		}
 	}
 
-	.featuredService {
-		flex-direction: column;
+	.featuredSection {
+		.featuredService {
+			flex-direction: column;
 
-		.serviceImageContainer {
-			width: 100%;
+			&.feature-2 {
+				flex-direction: column-reverse;
+			}
+	
+			.serviceImageContainer {
+				width: 100%;
+			}
+	
+			.serviceContent {
+				width: 100%;
+			}
+	
+			.buttonContainer {
+				padding-top: 1rem;
+			}
 		}
-
-		.serviceContent {
-			width: 100%;
-		}
-
-
 	}
-
-	.featureCard {
-		width: 100%;
-		max-width: 25rem;
-		margin: 1rem auto;
-	}
+	
 
 	.reviewsSection {
 		display: none; //TODO: get rid of this once the reviews are real
