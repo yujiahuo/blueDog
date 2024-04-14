@@ -33,69 +33,55 @@
 .sarahSection {
 	padding: 2rem;
 	overflow: hidden;
+	background-image: linear-gradient(#ffffff3a, #ffffff3a), url('../images/stockWoman.jpg');
+	background-size: cover;
+	height: 40rem;
+    background-position-y: -8rem;
+    background-position-x: -4rem;
 
-	.sarahPhoto {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		&::after {
-			content:""; 
-			position: absolute; 
-			bottom: 0;
-			left: 46rem;
-			right: 0;
-			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
-			height: 100%;
-			height: 100%;
-			width: 100%;
-			}
-
-		img {
-			position: relative;
-			width: 62rem;
-			top: -11rem;
-		}
-	}
-
-	.aboutSarah {
+	.textContent {
 		position: relative;
-		float: right;
-		max-width: 50rem;
-		background-color: $lightBG;
-		border-radius: 0 130px;
-		padding: 2rem;
+		top: 4rem;
+   		width: 47rem;
 
-		.border {
-			margin: 0.5rem 0;
+		&.appearOnScroll {
+			left: 37%;
+			transition:
+				left 0.5s ease-in-out,
+				opacity 0.5s ease-in-out;
 		}
-
-		h2 {
-			font-size: 1rem;
-			font-weight: 600;
+		
+		&.appearOnScroll.appear {
+			left: 40%;
 		}
 	}
 }
 
 .featuredSection {
 	padding: 1rem;
+	background-color: $lightBG;
 
 	h1 {
 		text-align: center;
-		padding: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
 	}
 	
+	.featuresContainer {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
 
 	.featuredService {
 		display: flex;
-		width: 90%;
-		margin: auto;
-		margin-bottom: 2rem;
+		min-width: 54rem;
+		max-width: 47%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 		border-radius: 1rem;
 		overflow: hidden;
+		height: 26rem;
 	
 		.border {
 			margin: 0.5rem 0;
@@ -124,14 +110,21 @@
 				color: #cc7c32;
 			}
 		}
+
+		&.feature-4 .serviceContent {
+			background-color: #f9fac7;
+	
+			h2 {
+				color: #e4ba30;
+			}
+		}
 	
 		.serviceImageContainer {
-			width: 40%;
-			max-height: 30rem;
+			width: 50%;
 			overflow: hidden;
 	
 			img {
-				width: 100%;
+				height: 100%;
 			}
 		}
 	
@@ -146,7 +139,6 @@
 			h2 {
 				font-size: 2rem;
 				margin-bottom: 0.5rem;
-				font-weight: 700;
 			}
 	
 			.checkboxTable {
@@ -192,39 +184,57 @@
 	}
 
 	.sarahSection{
-		.aboutSarah {
-			left: 0;
-			margin: 20rem 0 3rem 0;
-			border-radius: 0 50px;
-		}
-	
-		.sarahPhoto {
-			min-height: 19rem;
+		background-position-x: -11rem;
+		background-size: 73rem;
+		height: 38rem;
 
-			&::after {
-				left: 0;
-				top: 16rem;
-				height: 100%;
-				background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(142, 164, 183) 13%);
+		.textContent {
+			position: absolute;
+			top: unset;
+			bottom: 0;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.9);
+			padding: 1rem;
+
+			h1 {
+				font-size: 2rem;
 			}
 
-			img {
-				width: 100%;
-				top: -3rem;
+			&.appearOnScroll {
+				left: 0;
+				bottom: -0.5rem;
+				transition:
+					bottom 0.5s ease-in-out,
+					opacity 0.5s ease-in-out;
+			}
+
+			&.appearOnScroll.appear {
+				left: 0;
+				bottom: 0;
 			}
 		}
 	}
 
 	.featuredSection {
+
+		.featuresContainer {
+			flex-direction: column;
+		}
+
 		.featuredService {
 			flex-direction: column;
-
-			&.feature-2 {
-				flex-direction: column-reverse;
-			}
+			min-width: unset;
+			max-width: unset;
+			height: unset;
 	
 			.serviceImageContainer {
 				width: 100%;
+				height: 17rem;
+
+				img {
+					width: 100%;
+					height: unset;
+				}
 			}
 	
 			.serviceContent {
