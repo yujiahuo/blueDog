@@ -33,7 +33,7 @@
 .sarahSection {
 	padding: 2rem;
 	overflow: hidden;
-	background-image: linear-gradient(#ffffff3a, #ffffff3a), url('../images/stockWoman.jpg');
+	background-image: linear-gradient(to right, #ffffff00, #ffffff3a), url('../images/stockWoman.jpg');
 	background-size: cover;
 	height: 40rem;
     background-position-y: -8rem;
@@ -72,12 +72,13 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 2rem;
+		max-width: 125rem;
+		margin: auto;
 	}
 
 	.featuredService {
 		display: flex;
-		min-width: 54rem;
-		max-width: 47%;
+		width: 55rem;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 		border-radius: 1rem;
 		overflow: hidden;
@@ -87,32 +88,50 @@
 			margin: 0.5rem 0;
 		}
 	
-		&.feature-1 .serviceContent {
-			background-color: #f3c5ff;
+		&.feature-1 {
+			.serviceContent{
+				background-color: #f3c5ff;
+			}
 	
 			h2, i {
 				color: #a04ab6;
 			}
 		}
 	
-		&.feature-2 .serviceContent {
-			background-color: #c7fadd;
+		&.feature-2 {
+			.serviceContent{
+				background-color: #c7fadd;
+			}
 	
 			h2 {
 				color: #249454;
 			}
+
+			img {
+				position: relative;
+				left: -9rem;
+			}
 		}
 
-		&.feature-3 .serviceContent {
-			background-color: #fae0c7;
+		&.feature-3 {
+			.serviceContent{
+				background-color: #fae0c7;
+			}
 	
 			h2 {
 				color: #cc7c32;
 			}
+
+			img {
+				position: relative;
+				right: 1rem;
+			}
 		}
 
-		&.feature-4 .serviceContent {
-			background-color: #f9fac7;
+		&.feature-4 {
+			.serviceContent{
+				background-color: #f9fac7;
+			}
 	
 			h2 {
 				color: #e4ba30;
@@ -219,12 +238,13 @@
 
 		.featuresContainer {
 			flex-direction: column;
+			align-items: center;
 		}
 
 		.featuredService {
 			flex-direction: column;
-			min-width: unset;
-			max-width: unset;
+			width: 100%;
+			max-width: 26rem;
 			height: unset;
 	
 			.serviceImageContainer {
@@ -234,6 +254,8 @@
 				img {
 					width: 100%;
 					height: unset;
+					left: unset;
+					right: unset;
 				}
 			}
 	

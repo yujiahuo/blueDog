@@ -27,7 +27,7 @@
 .sarahSection {
   padding: 2rem;
   overflow: hidden;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2274509804), rgba(255, 255, 255, 0.2274509804)), url("../images/stockWoman.jpg");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2274509804)), url("../images/stockWoman.jpg");
   background-size: cover;
   height: 40rem;
   background-position-y: -8rem;
@@ -60,11 +60,12 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  max-width: 125rem;
+  margin: auto;
 }
 .featuredSection .featuredService {
   display: flex;
-  min-width: 54rem;
-  max-width: 47%;
+  width: 55rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   overflow: hidden;
@@ -76,25 +77,33 @@
 .featuredSection .featuredService.feature-1 .serviceContent {
   background-color: #f3c5ff;
 }
-.featuredSection .featuredService.feature-1 .serviceContent h2, .featuredSection .featuredService.feature-1 .serviceContent i {
+.featuredSection .featuredService.feature-1 h2, .featuredSection .featuredService.feature-1 i {
   color: #a04ab6;
 }
 .featuredSection .featuredService.feature-2 .serviceContent {
   background-color: #c7fadd;
 }
-.featuredSection .featuredService.feature-2 .serviceContent h2 {
+.featuredSection .featuredService.feature-2 h2 {
   color: #249454;
+}
+.featuredSection .featuredService.feature-2 img {
+  position: relative;
+  left: -9rem;
 }
 .featuredSection .featuredService.feature-3 .serviceContent {
   background-color: #fae0c7;
 }
-.featuredSection .featuredService.feature-3 .serviceContent h2 {
+.featuredSection .featuredService.feature-3 h2 {
   color: #cc7c32;
+}
+.featuredSection .featuredService.feature-3 img {
+  position: relative;
+  right: 1rem;
 }
 .featuredSection .featuredService.feature-4 .serviceContent {
   background-color: #f9fac7;
 }
-.featuredSection .featuredService.feature-4 .serviceContent h2 {
+.featuredSection .featuredService.feature-4 h2 {
   color: #e4ba30;
 }
 .featuredSection .featuredService .serviceImageContainer {
@@ -175,11 +184,12 @@
   }
   .featuredSection .featuresContainer {
     flex-direction: column;
+    align-items: center;
   }
   .featuredSection .featuredService {
     flex-direction: column;
-    min-width: unset;
-    max-width: unset;
+    width: 100%;
+    max-width: 26rem;
     height: unset;
   }
   .featuredSection .featuredService .serviceImageContainer {
@@ -189,6 +199,8 @@
   .featuredSection .featuredService .serviceImageContainer img {
     width: 100%;
     height: unset;
+    left: unset;
+    right: unset;
   }
   .featuredSection .featuredService .serviceContent {
     width: 100%;

@@ -5,6 +5,7 @@ body {
 
 .pageContent {
   width: 80%;
+  max-width: 95rem;
   margin: auto;
   padding: 2rem;
   display: grid;
