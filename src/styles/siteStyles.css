@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #1c6fb8;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2, h3 {
+  font-weight: 400;
+}
+
+p {
+  color: #272727;
+}
+
+/* Gives some spacing between text things */
+h3 + * {
+  margin-top: 1rem;
+}
+
+.callOutText {
+  font-size: 1.25rem;
+  color: #464646;
+  font-family: "Swanky and Moo Moo", cursive;
+}
+
+p + * {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.pageContent {
+  position: relative;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.coloredCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.coloredCard h2 {
+  font-size: 3rem;
+}
+.coloredCard .content {
+  padding: 1rem 0;
+}
+.coloredCard .content p {
+  margin-top: 0.5rem;
+}
+.coloredCard .content .button {
+  float: right;
+}
+
+.description {
+  font-size: 13px;
+  color: #464646;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.border {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: 1px dashed #464646;
+}
+
+a.button {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  background-color: #1c6fb8;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+a.button :visited {
+  color: inherit;
+}
+
+i {
+  padding: 0 0.5rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+ul.extraSpacing li {
+  margin-bottom: 0.5rem;
+}
+
+.photoWithMat {
+  position: relative;
+}
+.photoWithMat .mat {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.photoWithMat .mat.darkMat {
+  transform: rotate(-10deg);
+  background: #1c6fb8;
+}
+.photoWithMat .mat.lightMat {
+  transform: rotate(8deg);
+  background: #b5deff;
+}
+.photoWithMat img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.appearOnScroll {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.appearOnScroll.appear {
+  opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .waveContainer::before {
+    height: 38.5px;
+  }
+  .mobileHide {
+    display: none;
+  }
+}
+@media (min-width: 851px) {
+  .mobileOnly {
+    display: none;
+  }
+}/*# sourceMappingURL=siteStyles.css.map */

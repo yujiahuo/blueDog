@@ -1,0 +1,210 @@
+.banner {
+  background: linear-gradient(rgba(0, 21, 39, 0.8117647059), rgba(0, 21, 39, 0.8117647059)), url(../images/dotted.jpg);
+  background-size: 130%;
+  background-position-x: -13rem;
+  background-position-y: 60%;
+  text-align: center;
+  padding: 2rem;
+}
+.banner h1 {
+  color: white;
+}
+.banner p {
+  color: white;
+}
+.banner .button {
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+}
+
+.sarahSection {
+  padding: 2rem;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2274509804)), url("../images/stockWoman.jpg");
+  background-size: cover;
+  height: 40rem;
+  background-position-y: -8rem;
+  background-position-x: -4rem;
+  position: relative;
+}
+.sarahSection .textContent {
+  position: relative;
+  top: 4rem;
+  width: 47rem;
+}
+.sarahSection .textContent.appearOnScroll {
+  left: 37%;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.sarahSection .textContent.appearOnScroll.appear {
+  left: 40%;
+}
+
+.featuredSection {
+  padding: 1rem;
+  background-color: #dbeeff;
+}
+.featuredSection h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.featuredSection .featuresContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 125rem;
+  margin: auto;
+}
+.featuredSection .featuredService {
+  display: flex;
+  width: 55rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 26rem;
+}
+.featuredSection .featuredService .border {
+  margin: 0.5rem 0;
+}
+.featuredSection .featuredService:nth-child(1) .serviceContent {
+  background-color: #f3c5ff;
+}
+.featuredSection .featuredService:nth-child(1) h2, .featuredSection .featuredService:nth-child(1) i {
+  color: #a04ab6;
+}
+.featuredSection .featuredService:nth-child(2) .serviceContent {
+  background-color: #c7fadd;
+}
+.featuredSection .featuredService:nth-child(2) h2 {
+  color: #249454;
+}
+.featuredSection .featuredService:nth-child(2) img {
+  position: relative;
+  left: -9rem;
+}
+.featuredSection .featuredService:nth-child(3) .serviceContent {
+  background-color: #fae0c7;
+}
+.featuredSection .featuredService:nth-child(3) h2 {
+  color: #cc7c32;
+}
+.featuredSection .featuredService:nth-child(3) img {
+  position: relative;
+  right: 1rem;
+}
+.featuredSection .featuredService:nth-child(4) .serviceContent {
+  background-color: #f9fac7;
+}
+.featuredSection .featuredService:nth-child(4) h2 {
+  color: #e4ba30;
+}
+.featuredSection .featuredService .serviceImageContainer {
+  width: 50%;
+  overflow: hidden;
+}
+.featuredSection .featuredService .serviceImageContainer img {
+  height: 100%;
+}
+.featuredSection .featuredService .serviceContent {
+  padding: 2rem;
+  width: 65%;
+  background-image: url("../images/polkaDotBg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.featuredSection .featuredService .serviceContent h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.featuredSection .featuredService .serviceContent .checkboxTable {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 7rem;
+  width: 20rem;
+}
+.featuredSection .featuredService .serviceContent .checkboxTable .checkItem {
+  max-width: 14rem;
+  height: 2rem;
+}
+.featuredSection .featuredService .serviceContent .blurb {
+  height: 100%;
+  max-width: 50rem;
+}
+.featuredSection .featuredService .serviceContent .button {
+  float: right;
+}
+
+.reviewsSection {
+  background-color: white;
+}
+.reviewsSection .center {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .sarahSection {
+    background-position-x: -11rem;
+    background-size: 73rem;
+    height: 33rem;
+  }
+  .sarahSection .textContent {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+  }
+  .sarahSection .textContent h1 {
+    font-size: 2rem;
+  }
+  .sarahSection .textContent.appearOnScroll {
+    left: 0;
+    bottom: -0.5rem;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .sarahSection .textContent.appearOnScroll.appear {
+    left: 0;
+    bottom: 0;
+  }
+  .featuredSection .featuresContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .featuredSection .featuredService {
+    flex-direction: column;
+    width: 100%;
+    max-width: 26rem;
+    height: unset;
+  }
+  .featuredSection .featuredService .serviceImageContainer {
+    width: 100%;
+    height: 17rem;
+  }
+  .featuredSection .featuredService .serviceImageContainer img {
+    width: 100%;
+    height: unset;
+    left: unset;
+    right: unset;
+  }
+  .featuredSection .featuredService .serviceContent {
+    width: 100%;
+  }
+  .featuredSection .featuredService .buttonContainer {
+    padding-top: 1rem;
+  }
+  .reviewsSection {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */

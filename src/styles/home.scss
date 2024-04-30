@@ -1,0 +1,271 @@
+@import "./theme";
+
+.banner {
+	background: linear-gradient(#001527cf, #001527cf), url(../images/dotted.jpg);
+    background-size: 130%;
+    background-position-x: -13rem;
+    background-position-y: 60%;
+    text-align: center;
+    padding: 2rem;
+
+	h1 {
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+	.button {
+		margin: auto;
+		margin-top: 1rem;
+		padding: 0.5rem 1rem;
+		line-height: 1.5rem;
+	}
+}
+
+.sarahSection {
+	padding: 2rem;
+	overflow: hidden;
+	background-image: linear-gradient(to right, #ffffff00, #ffffff3a), url('../images/stockWoman.jpg');
+	background-size: cover;
+	height: 40rem;
+    background-position-y: -8rem;
+    background-position-x: -4rem;
+	position: relative;
+
+	.textContent {
+		position: relative;
+		top: 4rem;
+   		width: 47rem;
+
+		&.appearOnScroll {
+			left: 37%;
+			transition:
+				left 0.5s ease-in-out,
+				opacity 0.5s ease-in-out;
+		}
+		
+		&.appearOnScroll.appear {
+			left: 40%;
+		}
+	}
+}
+
+.featuredSection {
+	padding: 1rem;
+	background-color: $lightBG;
+
+	h1 {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+	}
+	
+	.featuresContainer {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+		max-width: 125rem;
+		margin: auto;
+	}
+
+	.featuredService {
+		display: flex;
+		width: 55rem;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+		border-radius: 1rem;
+		overflow: hidden;
+		height: 26rem;
+	
+		.border {
+			margin: 0.5rem 0;
+		}
+	
+		&:nth-child(1) {
+			.serviceContent{
+				background-color: #f3c5ff;
+			}
+	
+			h2, i {
+				color: #a04ab6;
+			}
+		}
+	
+		&:nth-child(2) {
+			.serviceContent{
+				background-color: #c7fadd;
+			}
+	
+			h2 {
+				color: #249454;
+			}
+
+			img {
+				position: relative;
+				left: -9rem;
+			}
+		}
+
+		&:nth-child(3) {
+			.serviceContent{
+				background-color: #fae0c7;
+			}
+	
+			h2 {
+				color: #cc7c32;
+			}
+
+			img {
+				position: relative;
+				right: 1rem;
+			}
+		}
+
+		&:nth-child(4) {
+			.serviceContent{
+				background-color: #f9fac7;
+			}
+	
+			h2 {
+				color: #e4ba30;
+			}
+		}
+	
+		.serviceImageContainer {
+			width: 50%;
+			overflow: hidden;
+	
+			img {
+				height: 100%;
+			}
+		}
+	
+		.serviceContent {
+			padding: 2rem;
+			width: 65%;
+			background-image: url('../images/polkaDotBg.png');
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+	
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 0.5rem;
+			}
+	
+			.checkboxTable {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				max-height: 7rem;
+				width: 20rem;
+	
+				.checkItem {
+					max-width: 14rem;
+					height: 2rem;
+				}
+			}
+	
+			.blurb {
+				height: 100%;
+				max-width: 50rem;
+			}
+	
+			.button {
+				float: right;
+			}
+		}
+	}
+}
+
+
+.reviewsSection {
+	background-color: white;
+
+	.center {
+		width: fit-content;
+		margin: auto;
+	}
+}
+
+@media (max-width: 1100px) {
+	.banner {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	.sarahSection{
+		background-position-x: -11rem;
+		background-size: 73rem;
+		height: 33rem;
+
+		.textContent {
+			position: absolute;
+			top: unset;
+			bottom: 0;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.9);
+			padding: 1rem;
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			&.appearOnScroll {
+				left: 0;
+				bottom: -0.5rem;
+				transition:
+					bottom 0.5s ease-in-out,
+					opacity 0.5s ease-in-out;
+			}
+
+			&.appearOnScroll.appear {
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+
+	.featuredSection {
+
+		.featuresContainer {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.featuredService {
+			flex-direction: column;
+			width: 100%;
+			max-width: 26rem;
+			height: unset;
+	
+			.serviceImageContainer {
+				width: 100%;
+				height: 17rem;
+
+				img {
+					width: 100%;
+					height: unset;
+					left: unset;
+					right: unset;
+				}
+			}
+	
+			.serviceContent {
+				width: 100%;
+			}
+	
+			.buttonContainer {
+				padding-top: 1rem;
+			}
+		}
+	}
+	
+
+	.reviewsSection {
+		display: none; //TODO: get rid of this once the reviews are real
+	}
+}
