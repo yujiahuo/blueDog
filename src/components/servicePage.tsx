@@ -57,7 +57,9 @@ export default function ServicePage(props: IServicePageProps) {
 						))}
 					</div>
 				</div>
-				<div className="testimonials">
+			</div>
+			<div className="testimonials">
+				<div className="testimonialContent">
 					<h2>Testimonials</h2>
 					<div className="testimonialGroup">
 						{props.testimonials?.map((testimony,index) => (

@@ -5,12 +5,23 @@
   text-align: center;
   position: relative;
   padding-bottom: 2rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.8117647059), rgba(255, 255, 255, 0.8117647059)), url(../images/dotted.jpg);
+  background-color: #eef7ff;
+}
+.servicePage .headingArea::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/lightDashes.png);
+  background-position-y: center;
+  background-size: contain;
 }
 .servicePage .headingArea h1 {
   font-size: 3rem;
   font-weight: 700;
   padding: 3rem 1rem 0.5rem 1rem;
+  position: relative;
 }
 .servicePage .headingArea .quickInfo {
   display: flex;
@@ -18,6 +29,7 @@
   width: 40%;
   margin: auto;
   color: #666666;
+  position: relative;
 }
 .servicePage .headingArea .quickInfo .fa-solid {
   padding-left: 0;
@@ -48,7 +60,8 @@
 }
 .servicePage .aboutSection .photo {
   position: absolute;
-  width: 25rem;
+  top: 2rem;
+  width: 22rem;
   align-self: center;
 }
 .servicePage .aboutSection .photo img {
@@ -56,10 +69,10 @@
   border-radius: 10px;
 }
 .servicePage .aboutSection .content {
-  margin-left: 23rem;
+  margin-left: 20rem;
   padding-left: 4rem;
-  margin-top: 3rem;
-  margin-right: 2rem;
+  margin-top: 4rem;
+  margin-right: 5rem;
 }
 .servicePage .pricing {
   grid-column: 1;
@@ -86,11 +99,15 @@
   width: 100%;
 }
 .servicePage .testimonials {
-  grid-column: 1/span 2;
-  grid-row: 3;
-  margin-top: 2rem;
+  background-color: white;
+  margin: 2rem 0;
+  padding-top: 2rem;
 }
-.servicePage .testimonials .testimonialGroup {
+.servicePage .testimonials .testimonialContent {
+  width: 60%;
+  margin: auto;
+}
+.servicePage .testimonials .testimonialContent .testimonialGroup {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -99,7 +116,10 @@
   gap: 1rem;
   padding-top: 1rem;
 }
-.servicePage .testimonials .testimonialGroup .oneTestimony {
+.servicePage .testimonials .testimonialContent .testimonialGroup .oneTestimony {
+  background-color: #dbeeff;
+  border-radius: 10px;
+  padding: 1.5rem;
   max-width: calc(50% - 0.5rem);
   min-width: 27rem;
   color: #464646;
@@ -149,7 +169,12 @@
     width: 100%;
     margin-bottom: 1rem;
   }
-  .servicePage .testimonials .testimonialGroup .oneTestimony {
+  .servicePage .testimonials .testimonialContent {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .servicePage .testimonials .testimonialContent .testimonialGroup .oneTestimony {
     min-width: 0;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=services.css.map */

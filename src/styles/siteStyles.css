@@ -142,6 +142,10 @@ ul.extraSpacing li {
   opacity: 1;
 }
 
+iframe {
+  border: none;
+}
+
 @media (max-width: 850px) {
   .waveContainer::before {
     height: 38.5px;

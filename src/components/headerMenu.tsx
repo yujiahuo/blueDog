@@ -51,14 +51,14 @@ export default function HeaderMenu() {
 								<div>Stay and train</div>
 								<div className="description">Let your new puppy pee in Sarah's house instead of yours</div>
 							</a>
-							<a href="/newPuppyAbcs">
+							<a href="/newPuppy">
 								<div>New puppy ABCs</div>
 								<div className="description">Set your new puppy up for success in the most critical time period of their life</div>
 							</a>
 						</div>
 						<div className="column">
 							<div className="label">For all dogs</div>
-							<a href="/newDogAbcs">
+							<a href="/newDog">
 								<div>New dog ABCs</div>
 								<div className="description">Set your new dog up for success</div>
 							</a>

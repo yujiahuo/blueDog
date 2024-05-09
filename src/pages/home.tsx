@@ -103,7 +103,7 @@ export default function Home() {
 
 				<div className="reviewsSection appearOnScroll">
 					<div className="center">
-						<img src={fakeGoogle} />
+						<iframe src="https://embedsocial.com/api/pro_hashtag/d9fb8edf60b454fd8cae301b5055eb68fb0cbab7" height="230" width="230"></iframe>
 					</div>
 				</div>
 			</div>

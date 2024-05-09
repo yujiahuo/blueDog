@@ -7,12 +7,24 @@
 		text-align: center;
 		position: relative;
 		padding-bottom: 2rem;
-		background: linear-gradient(#FFFFFFcf, #FFFFFFcf), url(../images/dotted.jpg);
+		background-color: $veryLightBG;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(../images/lightDashes.png);
+			background-position-y: center;
+			background-size: contain;
+		}
 	
 		h1 {
 			font-size: 3rem;
 			font-weight: 700;
 			padding: 3rem 1rem 0.5rem 1rem;
+			position: relative; // needed to for z-index over pseudo element
 		}
 	
 		.quickInfo {
@@ -21,6 +33,7 @@
 			width: 40%;
 			margin: auto;
 			color: #666666;
+			position: relative; // needed to for z-index over pseudo element
 	
 			.fa-solid {
 				padding-left: 0;
@@ -57,7 +70,8 @@
 	
 		.photo {
 			position: absolute;
-			width: 25rem;
+			top: 2rem;
+			width: 22rem;
 			align-self: center;
 	
 			img {
@@ -67,10 +81,10 @@
 		}
 	
 		.content {
-			margin-left: 23rem;
+			margin-left: 20rem;
 			padding-left: 4rem;
-			margin-top: 3rem;
-			margin-right: 2rem;
+			margin-top: 4rem;
+			margin-right: 5rem;
 		}
 	}
 	
@@ -105,25 +119,32 @@
 	}
 	
 	.testimonials {
-		grid-column: 1 / span 2;
-		grid-row: 3;
-	
-		margin-top: 2rem;
-	
-		.testimonialGroup {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			max-height: 50rem;
-			width: 100%;
-			gap: 1rem;
-			padding-top: 1rem;
-		
-			.oneTestimony {
-				max-width: calc(50% - 0.5rem);
-				min-width: 27rem;
-				color: #464646;
-				font-style: italic;
+		background-color: white;
+		margin: 2rem 0;
+		padding-top: 2rem;
+
+		.testimonialContent {
+			width: 60%;
+			margin: auto;
+
+			.testimonialGroup {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				max-height: 50rem;
+				width: 100%;
+				gap: 1rem;
+				padding-top: 1rem;
+			
+				.oneTestimony {
+					background-color: $lightBG;
+					border-radius: 10px;
+					padding: 1.5rem;
+					max-width: calc(50% - 0.5rem);
+					min-width: 27rem;
+					color: #464646;
+					font-style: italic;
+				}
 			}
 		}
 	}
@@ -187,14 +208,19 @@
 			width: 100%;
 			margin-bottom: 1rem;
 		}
-	
+
 		.testimonials {
-			.testimonialGroup {
-				.oneTestimony {
-					min-width: 0;
+			.testimonialContent{
+				width: 100%;
+				padding: 0 1.5rem;
+
+				.testimonialGroup {
+					.oneTestimony {
+						min-width: 0;
+						max-width: 100%;
+					}
 				}
 			}
 		}
 	}
-	
 }

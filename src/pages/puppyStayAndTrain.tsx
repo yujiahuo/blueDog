@@ -2,58 +2,63 @@ import bmodImg from '../images/kiwi.png';
 import '../styles/services.css';
 import ServicePage from '../components/servicePage';
 
-export default function BehaviorModification() {
+export default function PuppyStayAndTrain() {
 	return (
 		<>
 			<ServicePage
 				imageSrc={bmodImg}
-				serviceName='Behavior Modification & Consultation'
-				location="At Sarah's or virtual"
-				time='2-3 hour initial consult'
-				forWhom='For any dog'
+				serviceName='Puppy Stay & Train'
+				location="At Sarah's"
+				time='Two weeks'
+				forWhom='For puppies 16 weeks or younger'
 				aboutService={
 					<>
 						<p>
-							Appointments cover anything from <strong>nuisance behaviors</strong> (such as chewing, barking, digging), to more <strong>serious issues</strong> (such as resource guarding, dog-dog aggression, dog-human aggression, separation anxiety, fear, or handling issues).
+							For busy families who may not have time to take their puppy to group training classes and also want more intensive training than offered in group classes.
+							Your puppy will be boarded and trained in a home environment, not a kennel.
+							The Stay & Train program lays the foundation for general obedience skills and prevention of nuisance behaviors (such as jumping up, leash manners, etc.)
+							- it is not for adolescent or adult dogs with problem behaviors or aggression issues.
 						</p>
 						<p>
-							In this typically 90 minute consultation, Sarah will take a complete history of your dog and the presenting problem, help you set realistic expectations for improvement, and present you with a detailed written plan tailored to work for your individual personality and lifestyle to improve your dog's behavior.
+							We'll work on:
 						</p>
-						<p>
-							Follow-up via phone and email is encouraged and AT NO CHARGE!
-						</p>
+						<ul>
+							<li>Potty training</li>
+							<li>Socialization</li>
+							<li>Training foundations</li>
+							<li>Crate training</li>
+							<li>Interactions with other dogs</li>
+							<li>Handling and grooming prep</li>
+							<li>...and more</li>
+						</ul>
 					</>
 				}
 				pricing={
 					<>
+						
+						<p>
+							<b>$3,800</b> - Includes:
+						</p>
 						<ul className="extraSpacing">
 							<li>
-								<p>
-									<b>Behavior Consult: </b>
-									$450 flat rate (2 to 3 hours). Post-consultation telephone and email support are included at no additional charge. There is no additional charge for multiple-pet homes.
-								</p>
+								A Puppy Preparation phone consultation that covers everything you need to know to prepare for your new puppy's arrival
 							</li>
 							<li>
-								<p>
-									<b>Behavior Consult Follow-Up session: </b>
-									$175 flat rate (1 to 1.5 hours)
-								</p>
+								Two weeks of training in Blue Dog's home
 							</li>
 							<li>
-								<p>
-									<b>Behavior Consult: </b>
-									$875 flat rate (Save $100)
-								</p>
+								A New Puppy and Skills Transfer appointment with the entire family
+							</li>
+							<li>
+								A Skills Transfer video (featuring your own dog) that reviews everything your dog learned here at Blue Dog!
 							</li>
 						</ul>
-						<p>For appointments outside of our immediate neighborhood there may be an additional charge for travel time to your home or facility.</p>
-						<p>Follow-up via phone and email is encouraged and AT NO CHARGE!</p>
 						<p className="description">A discounted fee is available for consult services with dogs obtained from a rescue or animal shelter with proof of adoption!</p>
 					</>
 				}
 				resources={[
-					{displayName: "What's the difference between a trainer and a behaviorist?", url: "https://www.bluedogtraining.com/trainer_or_behaviorist"},
-					{displayName: "Resource guarding", url: "#"},
+					{displayName: "Thing 1", url: "#"},
+					{displayName: "Thing 2", url: "#"},
 					{displayName: "Another cool free resource", url: "#"},
 				]}
 				testimonials= {[

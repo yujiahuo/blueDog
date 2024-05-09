@@ -1,10 +1,9 @@
 @import "./theme";
 
 .aboutPage {
-	width: 80%;
-	max-width: 95rem;
-	margin: auto;
-	padding: 2rem;
+	background-color: $veryLightBG;
+	width: 100%;
+	padding: 2rem 10%;
 	display: grid;
 	grid-template-columns: 60% 40%;
 	grid-template-rows: 13rem auto auto;
@@ -16,14 +15,13 @@
 	
 		text-align: center;
 		padding: 0 1rem;
-		text-wrap: nowrap;
 	
 		h1 {
 			font-size: 4rem;
 		}
 	
 		.bioWords {
-			width: 100%;
+			width: fit-content;
 			margin: auto;
 			color: $themeDarkerer;
 			display: flex;
@@ -134,72 +132,68 @@
 	}
 }
 
-
-@media (max-width: 1500px) {
-	.aboutPage {
-		width: 100%;
-	}
-}
-
 @media (max-width: 1000px) {
 	.aboutPage {
 		display: block;
-	}
+		padding: 2rem 1.5rem;
 
-	.headingArea {
-		h1 {
-			font-size: 2rem;
-			font-weight: 600;
-		}
+		.headingArea {
+			padding: 0;
 
-		.bioWords {
-			span + span {
-				margin-left: 1rem;
-				
-				&::before {
-					margin-right: 1rem;
+			h1 {
+				font-size: 2.5rem;
+				font-weight: 600;
+			}
+	
+			.bioWords {
+				span + span {
+					margin-left: 1rem;
+					
+					&::before {
+						margin-right: 1rem;
+					}
 				}
 			}
 		}
-	}
-	
-	.photoWithMat {
-		margin: 3rem 1rem;
-		padding: 0;
-		height: auto;
-		width: auto;
 
-		img {
-			height: initial;
-		}
-	}
+		.photoWithMat {
+			margin: 3rem 1rem;
+			padding: 0;
+			height: auto;
+			width: auto;
 	
-	.aboutSection {
-		.aboutContent {
-			padding: 0 2rem;
-		}
-	}
-	
-	.qualifications {
-		padding: 0;
-		margin-bottom: 2rem;
-
-		.qualificationIcons {
-			.circleCard {
-				margin: 0.5rem;
+			img {
+				height: initial;
 			}
 		}
-	}
-
-	.border {
-		width: 40%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.photosRow {
-		img {
+		
+		.aboutSection {
+			.aboutContent {
+				padding: 0 2rem;
+			}
+		}
+		
+		.qualifications {
+			padding: 0;
+			margin-bottom: 2rem;
+	
+			.qualificationIcons {
+				.circleCard {
+					margin: 0.5rem;
+				}
+			}
+		}
+	
+		.border {
 			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	
+		.photosRow {
+			img {
+				width: 40%;
+			}
 		}
 	}
 }
