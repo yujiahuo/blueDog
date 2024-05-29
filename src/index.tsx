@@ -4,7 +4,6 @@ import HeaderMenu from './components/headerMenu';
 import Footer from './components/footer';
 import './styles/siteStyles.css';
 import './scripts/setupPage';
-import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,8 +15,15 @@ import PuppyStayAndTrain from './pages/puppyStayAndTrain';
 import NewDog from './pages/newDog';
 import NewPuppy from './pages/newPuppy';
 import BabyPrep from './pages/babyPrep';
+import AnimalActors from './pages/animalActors';
+import OutAndAbout from './pages/outAndAbout';
+import Skills from './pages/skills';
+import Seminars from './pages/seminars';
+import BehaviorAssessment from './pages/behaviorAssessment';
+import ServiceDog from './pages/serviceDog';
 import About from './pages/about';
 import Products from './pages/products';
+import PickingNewDog from './pages/pickingNewDog';
 
 
 const root = ReactDOM.createRoot(
@@ -34,6 +40,13 @@ root.render(
         <Route path="/newdog" element={<NewDog />} />
         <Route path="/newpuppy" element={<NewPuppy />} />
         <Route path="/babyprep" element={<BabyPrep />} />
+        <Route path="/animalactors" element={<AnimalActors />} />
+        <Route path="/outandabout" element={<OutAndAbout />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/seminars" element={<Seminars />} />
+        <Route path="/behaviorassessment" element={<BehaviorAssessment />} />
+        <Route path="/pickingnewdog" element={<PickingNewDog />} />
+        <Route path="/servicedog" element={<ServiceDog />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
       </Routes>
@@ -41,8 +54,3 @@ root.render(
     <Footer />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

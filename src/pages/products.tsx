@@ -1,4 +1,7 @@
 import '../styles/products.css';
+import withAndrew from '../images/withAndrew.png';
+import ProductLeashDetails from '../components/productLeashDetails';
+import ProductDetails from '../components/productDetails';
 
 export default function Products() {
 	return (
@@ -8,27 +11,25 @@ export default function Products() {
 					<h1>Products we sell or recommend</h1>
 				</div>
 
+				<h2>For Sale</h2>
+
 				<div className="forSale">
-					<h2>For Sale</h2>
-					<div className="product">
-						<div className="productImage"></div>
+					<div className="product card">
+						<div className="productImage">
+							<img src={withAndrew} />
+						</div>
 						<div className="productContent">
 							<h3>Hands-free dog leash</h3>
 							<p>
 								Here is some basic info about the leash and stuff
 							</p>
-							<p>
-								FAQ
-							</p>
-							<div className="progressiveDisclosure">
-								<a href="#" className="expandable">Who should have one?</a>
-								<div className="expandedBit">Clients with strong dogs that have a tendency to pull</div>
-							</div>
 							<a href="#" className="button">Instructions</a>
 						</div>
 					</div>
-					<div className="product">
-						<div className="productImage"></div>
+					<div className="product card">
+						<div className="productImage">
+							<img src={withAndrew} />
+						</div>
 						<div className="productContent">
 							<h3>The language of dogs</h3>
 							<p>
@@ -39,8 +40,10 @@ export default function Products() {
 							<a href="#" className="button">See reviews</a>
 						</div>
 					</div>
-					<div className="product">
-						<div className="productImage"></div>
+					<div className="product card">
+						<div className="productImage">
+							<img src={withAndrew} />
+						</div>
 						<div className="productContent">
 							<h3>Am I Safe</h3>
 							<p>
@@ -53,12 +56,89 @@ export default function Products() {
 					</div>
 				</div>
 
-				<div className="recommendedSection">
-					<h2>Our top 10 books for dog owners or people considering getting a dog</h2>
+				<h2>Recommendations</h2>
+
+				<div className="recommendedSection card">
+					<div className="recommendedImg">
+						<img src={withAndrew} />
+					</div>
 					<div className="recommendedContent">
-						
+						<h3>Our top 10 books for dog owners or people considering getting a dog</h3>
+						<ul>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+						</ul>
 					</div>
 				</div>
+
+				<div className="recommendedSection card">
+					<div className="recommendedImg">
+						<img src={withAndrew} />
+					</div>
+					<div className="recommendedContent">
+						<h3>Our top 10 books for dog owners or people considering getting a dog</h3>
+						<ul>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div className="recommendedSection card">
+					<div className="recommendedImg">
+						<img src={withAndrew} />
+					</div>
+					<div className="recommendedContent">
+						<h3>Our top 10 books for dog owners or people considering getting a dog</h3>
+						<ul>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div className="recommendedSection card">
+					<div className="recommendedImg">
+						<img src={withAndrew} />
+					</div>
+					<div className="recommendedContent">
+						<h3>Our top 10 books for dog owners or people considering getting a dog</h3>
+						<ul>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+							<li>
+								<a href="#">Get this book</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<ProductDetails id="leashProductDetails" content={<ProductLeashDetails/>} />
 			</div>
 		</>
 	)

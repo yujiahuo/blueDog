@@ -1,3 +1,53 @@
+.productsPage h2 {
+  text-align: center;
+  padding: 1rem;
+  background-color: aliceblue;
+  margin: 1rem 0;
+}
 .productsPage .headingArea {
   text-align: center;
+  padding: 2rem;
+}
+.productsPage .forSale {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.productsPage .forSale .product {
+  width: 20rem;
+  min-width: 20rem;
+}
+.productsPage .productImage img {
+  max-width: 100%;
+}
+.productsPage .recommendedSection {
+  display: flex;
+  margin: 0 5rem 3rem 5rem;
+}
+.productsPage .recommendedSection .recommendedImg {
+  width: 20rem;
+}
+.productsPage .recommendedSection .recommendedImg img {
+  width: 100%;
+}
+.productsPage .detailsView {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6666666667);
+}
+.productsPage .detailsView .card {
+  width: 50%;
+  margin: 15% auto 0 auto;
+}
+.productsPage .detailsView .productImage {
+  width: 10rem;
+}
+.productsPage .detailsView .productImage img {
+  width: 100%;
 }/*# sourceMappingURL=products.css.map */
