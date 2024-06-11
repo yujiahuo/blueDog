@@ -7,7 +7,7 @@
 		text-align: center;
 		position: relative;
 		padding-bottom: 2rem;
-		background-color: $veryLightBG;
+		background-color: $darkBG;
 		
 		&::before {
 			content: "";
@@ -18,11 +18,14 @@
 			background-image: url(../images/lightDashes.png);
 			background-position-y: center;
 			background-size: contain;
+			background-repeat: no-repeat;
+			opacity: 0.5;
 		}
 	
 		h1 {
 			font-size: 3rem;
 			font-weight: 700;
+			color: white;
 			padding: 3rem 1rem 0.5rem 1rem;
 			position: relative; // needed to for z-index over pseudo element
 		}
@@ -32,7 +35,7 @@
 			justify-content: space-evenly;
 			width: 40%;
 			margin: auto;
-			color: #666666;
+			color: rgb(255, 255, 255);
 			position: relative; // needed to for z-index over pseudo element
 	
 			.fa-solid {
@@ -215,9 +218,13 @@
 				padding: 0 1.5rem;
 
 				.testimonialGroup {
+					display: block;
+					max-height: unset;
+
 					.oneTestimony {
 						min-width: 0;
 						max-width: 100%;
+						margin: 1rem 0;
 					}
 				}
 			}

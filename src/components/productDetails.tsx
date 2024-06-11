@@ -7,10 +7,13 @@ export default function ProductDetails(props: IProductDetailsProps) {
 	return  (
 		<>
 			<div id={props.id} className="detailsView">
-				<div className="closeButton" onClick={() => {$("#" + props.id).css("display","none");} } >
-				</div>
+				<div className="productDetails card">
+					<a href="#" className="closeButton" onClick={() => {$("#" + props.id).css("display","none");} } >
+						<i className="fa-regular fa-circle-xmark"></i>
+					</a>
 				
-				{props.content}
+					{props.content}
+				</div>
 			</div>
 		</>
 	)
