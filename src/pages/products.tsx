@@ -8,9 +8,10 @@ import handbook from '../images/handbookAppliedBehavior.jpg';
 import lucy from '../images/lucy.jpg'
 import ProductLeashDetails from '../components/productLeashDetails';
 import ProductDetails from '../components/productDetails';
+import ProductVideoDetails from '../components/productVideoDetails';
 
 function openProductDetails(id: string) {
-	$("#" + id).css("display", "block");
+	$("#" + id).css("display", ""); // Remove inline display:none
 }
 
 export default function Products() {
@@ -22,10 +23,10 @@ export default function Products() {
 				</div>
 
 				<div className="forSale">
-					<h2>For Sale</h2>
+					<h2>Sarah's educational videos</h2>
 
 					<div className="saleItems">
-						<div className="product">
+						<div className="product" style={{display: "none"}}>
 							<div className="productImage">
 								<img src={leash} />
 							</div>
@@ -44,9 +45,11 @@ export default function Products() {
 							<div className="productContent">
 								<h3>The language of dogs</h3>
 								<p>
-									This educational video features a lively presentation and extensive footage of a variety breeds showing hundreds of examples of canine behavior and body language.
+									What is your dog's body language saying to you and to other dogs? This educational video features a lively presentation and extensive footage of a variety of breeds showing hundreds of examples of canine behavior and body language.
 								</p>
-								<a href="#" className="button" onClick={() => openProductDetails("langOfDogsProductDetails")}>Learn more</a>
+								<a href="https://vimeo.com/ondemand/languageofdogs" className='button'>Stream it online</a>
+								<a href="https://vimeo.com/ondemand/languageofdogs/546580620?autoplay=1">Watch the trailer</a>
+								<a href="#" onClick={() => openProductDetails("videoProductDetails")}>See other buying options</a>
 							</div>
 						</div>
 						<div className="product">
@@ -58,7 +61,9 @@ export default function Products() {
 								<p>
 									This video provides start-to-finish instructions for completing an assessment that is safe for the handler, fair to the dog, and has excellent predictability of future behavior. All support materials are provided, including a resource guarding scale and evaluation form.
 								</p>
-								<a href="#" className="button" onClick={() => openProductDetails("amISafeProductDetails")}>Learn more</a>
+								<a href="https://vimeo.com/ondemand/languageofdogs" className='button'>Stream it online</a>
+								<a href="https://vimeo.com/ondemand/amisafe/696189738?autoplay=1">Watch the trailer</a>
+								<a href="#" onClick={() => openProductDetails("videoProductDetails")}>See other buying options</a>
 							</div>
 						</div>
 					</div>
@@ -66,7 +71,7 @@ export default function Products() {
 				
 				<div className="border"></div>
 
-				<h2>Recommendations</h2>
+				<h2>Other product recommendations</h2>
 				<div className="recommendations">	
 					<div className="recommendedSection">
 						<div className="recommendedImg">
@@ -233,6 +238,7 @@ export default function Products() {
 				</div>
 
 				<ProductDetails id="leashProductDetails" content={<ProductLeashDetails/>} />
+				<ProductDetails id="videoProductDetails" content={<ProductVideoDetails/>} />
 			</div>
 		</>
 	)

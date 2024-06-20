@@ -55,12 +55,6 @@
 .featuredSection {
 	padding: 1rem;
 	background-color: $lightBG;
-
-	h1 {
-		text-align: center;
-		padding-top: 2rem;
-		padding-bottom: 3rem;
-	}
 	
 	.featuresContainer {
 		display: flex;
@@ -182,11 +176,23 @@
 
 
 .reviewsSection {
-	background-color: white;
+	background-image: linear-gradient(#ffffffcc, #ffffffcc), url('../images/mapBG.png');
+	background-size: cover;
+	background-position: center;
 
-	.center {
+	.widgetContainer {
 		width: fit-content;
+		padding-left: 74px; //needed to center because the widget has arbitrary space on the right and we can't control that
+		padding-bottom: 2rem;
 		margin: auto;
+	}
+}
+
+.featuredSection, .reviewsSection {
+	h1 {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
 	}
 }
 
@@ -262,10 +268,5 @@
 				padding-top: 1rem;
 			}
 		}
-	}
-	
-
-	.reviewsSection {
-		display: none; //TODO: get rid of this once the reviews are real
 	}
 }

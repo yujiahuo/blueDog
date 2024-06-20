@@ -32,7 +32,6 @@ export default function HeaderMenu() {
 	return (
 		<div className="header">
 			<Logo />
-
 			<div className="menuGroup">
 				<a href="#" id="mobileMenu" onClick={toggleMobileMenu}>
 					<i className="fa-solid fa-bars"></i>
@@ -74,6 +73,10 @@ export default function HeaderMenu() {
 								<div>Skills training</div>
 								<div className="description">Keep or remove this?</div>
 							</a>
+							<a href="/outandabout">
+								<div>Out and about training</div>
+								<div className="description">Seasonal offering</div>
+							</a>
 						</div>
 						<div className="column">
 							<div className="label">Assessments</div>
@@ -97,15 +100,7 @@ export default function HeaderMenu() {
 							<div className="label">Education</div>
 							<a href="/seminars">
 								<div>Seminar/webinar speaker</div>
-								<div className="description">International speaker at 100+ seminars</div>
-							</a>
-							<a href="/professionalDevelopment">
-								<div>Professional development seminars</div>
-								<div className="description">Need your people to understand how to enter homes with dogs and stuff?</div>
-							</a>
-							<a href="/shelterStaffTraining">
-								<div>Shelter staff training</div>
-								<div className="description">Sarah does this too</div>
+								<div className="description">International speaker at 100+ seminars, professional development, shelter staff training</div>
 							</a>
 							<a href="/mentoring">
 								<div>Mentoring</div>

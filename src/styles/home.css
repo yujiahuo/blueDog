@@ -46,11 +46,6 @@
   padding: 1rem;
   background-color: #dbeeff;
 }
-.featuredSection h1 {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
 .featuredSection .featuresContainer {
   display: flex;
   justify-content: center;
@@ -141,12 +136,22 @@
 }
 
 .reviewsSection {
-  background-color: white;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/mapBG.png");
+  background-size: cover;
+  background-position: center;
 }
-.reviewsSection .center {
+.reviewsSection .widgetContainer {
   width: -moz-fit-content;
   width: fit-content;
+  padding-left: 74px;
+  padding-bottom: 2rem;
   margin: auto;
+}
+
+.featuredSection h1, .reviewsSection h1 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 1100px) {
@@ -203,8 +208,5 @@
   }
   .featuredSection .featuredService .buttonContainer {
     padding-top: 1rem;
-  }
-  .reviewsSection {
-    display: none;
   }
 }/*# sourceMappingURL=home.css.map */
