@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/blueDog/static/css/main.345c913d.css",
+    "main.js": "/blueDog/static/js/main.e7012140.js",
+    "static/js/453.94bea405.chunk.js": "/blueDog/static/js/453.94bea405.chunk.js",
+    "static/media/withAndrew.png": "/blueDog/static/media/withAndrew.377a6252bb44350f1c4f.png",
+    "static/media/SarahInVeryRealDanger.png": "/blueDog/static/media/SarahInVeryRealDanger.e862366c657bb52ab768.png",
+    "static/media/sarahAndGidget.png": "/blueDog/static/media/sarahAndGidget.af745aa54fc44f27f985.png",
+    "static/media/SarahPlantWhisperer.png": "/blueDog/static/media/SarahPlantWhisperer.ce1b3c0fa6059456d5f6.png",
+    "static/media/puppy1.png": "/blueDog/static/media/puppy1.5b2a7eb47d12b54aab73.png",
+    "static/media/kiwi.png": "/blueDog/static/media/kiwi.1cf6bd7463b0f65af90e.png",
+    "static/media/lightDashes.png": "/blueDog/static/media/lightDashes.22659fe87cc4a5751c99.png",
+    "static/media/stockWoman.jpg": "/blueDog/static/media/stockWoman.949c4162555f2f8299ce.jpg",
+    "static/media/darkDashes.png": "/blueDog/static/media/darkDashes.6bbeb6f34da5c435ab22.png",
+    "static/media/polkaDotBg.png": "/blueDog/static/media/polkaDotBg.b57ad0bab76632f748c5.png",
+    "static/media/iaabc.png": "/blueDog/static/media/iaabc.c6c72af595e2bc2c92b6.png",
+    "static/media/blueDogLogo-white.png": "/blueDog/static/media/blueDogLogo-white.bf96709e1b150d7ae96e.png",
+    "index.html": "/blueDog/index.html",
+    "main.345c913d.css.map": "/blueDog/static/css/main.345c913d.css.map",
+    "main.e7012140.js.map": "/blueDog/static/js/main.e7012140.js.map",
+    "453.94bea405.chunk.js.map": "/blueDog/static/js/453.94bea405.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.345c913d.css",
+    "static/js/main.e7012140.js"
+  ]
+}
