@@ -46,7 +46,7 @@ export default function HeaderMenu() {
 					<div id="trainingServicesDropdown" className="menuDropdown menuDropdown-1">
 						<div className="column">
 							<div className="label">For puppies</div>
-							<a href="/puppyStayAndTrain">
+							<a href="/stayAndTrain">
 								<div>Stay and train</div>
 								<div className="description">Let your new puppy pee in Sarah's house instead of yours</div>
 							</a>
@@ -58,7 +58,7 @@ export default function HeaderMenu() {
 						<div className="column">
 							<div className="label">For all dogs</div>
 							<a href="/newDog">
-								<div>New dog ABCs</div>
+								<div>Dog fundamentals</div>
 								<div className="description">Set your new dog up for success</div>
 							</a>
 							<a href="/behaviorModification">

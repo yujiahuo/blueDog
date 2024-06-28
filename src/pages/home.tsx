@@ -25,7 +25,7 @@ export default function Home() {
 						<h1>Train with Sarah Kalnajs</h1>
 						<p className="description">Certified Dog Behavior Consultant & Certified Professional Dog Trainer APDT/ABMA/IAABC</p>
 						<p>Sarah has been working with dogs professionally for over twenty-five years and is well known in the industry for her skills and educational content. She's behind the Language of Dogs and Am I Safe video series and has given over 100 seminars around the world.</p>
-						<a href="./aboutSarah.html" className="button">Read more about Sarah's qualifications</a>
+						<a href="/about" className="button">Read more about Sarah's qualifications</a>
 					</div>
 				</div>
 

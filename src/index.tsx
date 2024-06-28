@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/home';
 import BehaviorModification from './pages/behaviorModification';
-import PuppyStayAndTrain from './pages/puppyStayAndTrain';
+import StayAndTrain from './pages/stayAndTrain';
 import NewDog from './pages/newDog';
 import NewPuppy from './pages/newPuppy';
 import BabyPrep from './pages/babyPrep';
@@ -36,7 +36,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/behaviormodification" element={<BehaviorModification />} />
-        <Route path="/puppystayandtrain" element={<PuppyStayAndTrain />} />
+        <Route path="/stayandtrain" element={<StayAndTrain />} />
         <Route path="/newdog" element={<NewDog />} />
         <Route path="/newpuppy" element={<NewPuppy />} />
         <Route path="/babyprep" element={<BabyPrep />} />

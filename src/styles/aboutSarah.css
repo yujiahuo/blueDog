@@ -56,8 +56,12 @@
   text-align: center;
   padding: 0 4rem;
 }
+.aboutPage .aboutSection .aboutContent .iconsContainer {
+  font-size: 1.5rem;
+}
 .aboutPage .aboutSection .aboutContent .iconsContainer a {
   color: #1c6fb8;
+  margin: 0 0.5rem;
 }
 .aboutPage .qualifications {
   grid-column: 2;

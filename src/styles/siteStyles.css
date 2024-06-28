@@ -32,7 +32,7 @@ p {
 }
 
 /* Gives some spacing between text things */
-h3 + * {
+h3 + :not(.description) {
   margin-top: 1rem;
 }
 
