@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "web-component": "^1.0.26"
   }
 }
