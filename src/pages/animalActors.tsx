@@ -18,7 +18,6 @@ export default function AnimalActors() {
 				}
 				pricing={
 					<>
-						
 						<p className="description">A discounted fee is available for consult services with dogs obtained from a rescue or animal shelter with proof of adoption!</p>
 					</>
 				}

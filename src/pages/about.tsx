@@ -41,9 +41,8 @@ export default function About() {
 						</p>
 						<div className="iconsContainer">
 							<a href="https://www.instagram.com/sarahkalnajs"><i className="fa fa-instagram"></i></a>
-							<a href="https://www.instagram.com/sarahkalnajs"><i className="fa fa-instagram"></i></a>
-							<a href="https://www.instagram.com/sarahkalnajs"><i className="fa fa-instagram"></i></a>
-							<a href="https://www.instagram.com/sarahkalnajs"><i className="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/@sarahkalnajs5810"><i className="fa fa-youtube"></i></a>
+							<a href="https://www.facebook.com/BlueDogTrainingAndBehavior"><i className="fa fa-facebook"></i></a>
 						</div>
 					</div>
 					<div className="border"></div>
@@ -103,7 +102,8 @@ export default function About() {
 				<div className="experience">
 					<div className="experienceSection">
 						<h2>In the rescue world</h2>
-						<p>Sarah is a Certified Dog Behavior Consultant (International Association of Animal Behavior Consultants) and Certified Pet Dog Trainer (Certification Council for Pet Dog Trainers) with over ten years' experience working in canine behavior, training, and research.
+						<p>
+							Sarah is a Certified Dog Behavior Consultant (International Association of Animal Behavior Consultants) and Certified Pet Dog Trainer (Certification Council for Pet Dog Trainers) with over ten years' experience working in canine behavior, training, and research.
 							Sarah is a professional member of the ABMA (Animal Behavior Management Alliance), APDT (Association of Pet Dog Trainers), IAABC (International Association of Animal Behavior Consultants), and the IIACAB (International Institute for Applied Companion Animal Behavior).
 						</p>
 
@@ -115,7 +115,8 @@ export default function About() {
 
 					<div className="experienceSection">
 						<h2>Training trainers</h2>
-						<p>Sarah was once president of Wisconsin American Eskimo Rescue and political liaison for the Wisconsin Dog Rescue Coalition as well as an Executive Committee Member of AAFMED (Arf's Angel Fund Medical Assistance) which provides financial aid to rescued pets in need of medical help.
+						<p>
+							Sarah was once president of Wisconsin American Eskimo Rescue and political liaison for the Wisconsin Dog Rescue Coalition as well as an Executive Committee Member of AAFMED (Arf's Angel Fund Medical Assistance) which provides financial aid to rescued pets in need of medical help.
 							A popular speaker and freelance writer, Sarah presents seminars nationwide on topics relating to dog training and behavior. She has been interviewed by BBC radio, NBC television, Wisconsin Public Radio, Women’s Health & Fitness magazine, and Honolulu magazine, and has written articles for APDT Chronicle of the Dog, Madison magazine, Allpets, and other publications.
 							Sarah serves as a consultant to a number of humane societies in Southern Wisconsin, training staff and implementing evaluation protocols and training and behavior programs. She is well known for her evaluation protocol (the Blue Dog Behavior Evaluation) as well as the Dog-Safe Waist Restraint System used by shelters and dog owners who need to evaluate or work with reactive, fearful or aggressive dogs.
 						</p>
@@ -123,9 +124,17 @@ export default function About() {
 
 					<div className="experienceSection">
 						<h2>Educating the world</h2>
-						<p>Sarah was once president of Wisconsin American Eskimo Rescue and political liaison for the Wisconsin Dog Rescue Coalition as well as an Executive Committee Member of AAFMED (Arf's Angel Fund Medical Assistance) which provides financial aid to rescued pets in need of medical help.
+						<p>
+							Sarah was once president of Wisconsin American Eskimo Rescue and political liaison for the Wisconsin Dog Rescue Coalition as well as an Executive Committee Member of AAFMED (Arf's Angel Fund Medical Assistance) which provides financial aid to rescued pets in need of medical help.
 							A popular speaker and freelance writer, Sarah presents seminars nationwide on topics relating to dog training and behavior. She has been interviewed by BBC radio, NBC television, Wisconsin Public Radio, Women’s Health & Fitness magazine, and Honolulu magazine, and has written articles for APDT Chronicle of the Dog, Madison magazine, Allpets, and other publications.
 							She has extensive experience as an expert witness in both civil and criminal litigation relating to dog aggression.
+						</p>
+					</div>
+
+					<div className="experienceSection">
+						<h2>Other fun facts</h2>
+						<p>
+							Sarah's dad invented the original Pooper Scooper.
 						</p>
 					</div>
 				</div>

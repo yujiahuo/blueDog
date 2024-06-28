@@ -4,8 +4,17 @@ import FeaturedService from '../components/featuredService';
 import puppyImg from '../images/puppy1.png';
 import bmodImg from '../images/kiwi.png';
 import sarahDanger from '../images/SarahInVeryRealDanger.png';
-import fakeGoogle from '../images/fakeGoogleReviews.png';
 import '../styles/home.css';
+
+
+(function reviewWidget(d, s, id) {
+	var js: any;
+	if (d.getElementById(id)) {return;}
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://embedsocial.com/cdn/ht.js";
+	d.getElementsByTagName("head")[0].appendChild(js);
+}(document, "script", "EmbedSocialHashtagScript"));
 
 export default function Home() {
 	return (
@@ -16,7 +25,7 @@ export default function Home() {
 						<h1>Train with Sarah Kalnajs</h1>
 						<p className="description">Certified Dog Behavior Consultant & Certified Professional Dog Trainer APDT/ABMA/IAABC</p>
 						<p>Sarah has been working with dogs professionally for over twenty-five years and is well known in the industry for her skills and educational content. She's behind the Language of Dogs and Am I Safe video series and has given over 100 seminars around the world.</p>
-						<a href="./aboutSarah.html" className="button">Read more about Sarah's qualifications</a>
+						<a href="/about" className="button">Read more about Sarah's qualifications</a>
 					</div>
 				</div>
 
@@ -102,8 +111,13 @@ export default function Home() {
 				/>
 
 				<div className="reviewsSection appearOnScroll">
-					<div className="center">
-						<iframe src="https://embedsocial.com/api/pro_hashtag/d9fb8edf60b454fd8cae301b5055eb68fb0cbab7" height="230" width="230"></iframe>
+					<h1>Check out what people are saying on Google</h1>
+					<div className="widgetContainer">
+						<div className="embedsocial-hashtag" data-ref="d9fb8edf60b454fd8cae301b5055eb68fb0cbab7">
+							<a className="feed-powered-by-es feed-powered-by-es-badge-img" href="https://embedsocial.com/blog/embed-google-reviews/" target="_blank" title="Embed Google reviews">
+								<img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

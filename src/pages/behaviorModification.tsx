@@ -14,7 +14,8 @@ export default function BehaviorModification() {
 				aboutService={
 					<>
 						<p>
-							Appointments cover anything from <strong>nuisance behaviors</strong> (such as chewing, barking, digging), to more <strong>serious issues</strong> (such as resource guarding, dog-dog aggression, dog-human aggression, separation anxiety, fear, or handling issues).
+							Struggling with your dog's behavior? These appointments can cover anything from <strong>nuisance behaviors</strong> (such as chewing, barking, digging), to more <strong>serious issues</strong> (such as resource guarding, dog-dog aggression, dog-human aggression, separation anxiety, fear, or handling issues).
+							Sarah is a Certified Dog Behavior Consultant who specializes in the tough cases and can make strong, lasting change without the use of aversive tools.
 						</p>
 						<p>
 							In this typically 90 minute consultation, Sarah will take a complete history of your dog and the presenting problem, help you set realistic expectations for improvement, and present you with a detailed written plan tailored to work for your individual personality and lifestyle to improve your dog's behavior.
@@ -53,8 +54,8 @@ export default function BehaviorModification() {
 				}
 				resources={[
 					{displayName: "What's the difference between a trainer and a behaviorist?", url: "https://www.bluedogtraining.com/trainer_or_behaviorist"},
-					{displayName: "Resource guarding", url: "#"},
-					{displayName: "Another cool free resource", url: "#"},
+					{displayName: "Free lecture on resource guarding", url: "https://www.youtube.com/watch?v=hzCORDd7Jmk"},
+					{displayName: "Dog muzzles: why, why, and how to currectly use them", url: "https://www.akc.org/expert-advice/training/dog-muzzles-when-why-how-to-use/"},
 				]}
 				testimonials= {[
 					{

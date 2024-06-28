@@ -51,7 +51,7 @@ export default function ServicePage(props: IServicePageProps) {
 						<CallButton />
 					</div>
 					<div className="content">
-						<h2>Resources we like</h2>
+						<h2>Check these out too</h2>
 						{props.resources?.map((resource, index) => (
 							<a href={resource.url} key={index}>{resource.displayName}</a>
 						))}
