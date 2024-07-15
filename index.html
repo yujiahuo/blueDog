@@ -1,22 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/d6a302b9c4.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Train with Sarah Kalnajs"
-    />
-    <title>Blue Dog Training</title>
-  </head>
-  <body>
-    <div id="root">
-      <header-menu></header-menu>
-	  This is the home page
-	  <a href="about.html">Go to about page</a>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.ico" />
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="https://kit.fontawesome.com/d6a302b9c4.js" crossorigin="anonymous"></script>
+		<script src="components/header-menu.js" type="module"></script>
+		<script src="components/call-button.js" type="module"></script>
+		<script src="setupPage.js"></script>
+		<link rel="stylesheet" href="styles/siteStyles.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Blue Dog Training & Behavior</title>
+	</head>
+	<body>
+		<header-menu></header-menu>
+		<div class="homePage">
+			<div class="sarahSection">
+				<div class="textContent appearOnScroll">
+					<h1>Train with Sarah Kalnajs</h1>
+					<p class="description">Certified Dog Behavior Consultant & Certified Professional Dog Trainer APDT/ABMA/IAABC</p>
+					<p>Sarah has been working with dogs professionally for over twenty-five years and is well known in the industry for her skills and educational content. She's behind the Language of Dogs and Am I Safe video series and has given over 100 seminars around the world.</p>
+					<a href="/about" class="button">Read more about Sarah's qualifications</a>
+				</div>
+			</div>
+
+			<div class="banner">
+				<h1>Science-based, humane training for your canine best friend</h1>
+				<p>Specializing in puppy-raising and helping dogs who are fearful, reactive, or aggresive</p>
+				<call-button>
+			</div>
+
+			<div class="featuredSection">
+				<h1 class="appearOnScroll">
+					Services our clients love
+				</h1>
+				<div class="featuresContainer">
+					<div class="featuredService appearOnScroll">
+						<div class="serviceImageContainer">
+							<img src="/images/puppy1.png" />
+						</div>
+						<div class="serviceContent">
+							<h2>The only local puppy Stay & Train</h2>
+							<p class="description">For puppies 8-16 weeks</p>
+							<div class="border"></div>
+							<div class="blurb">
+								<p>
+									The first few weeks with a new puppy are the most critical weeks of their lives.
+									Give your new puppy a great foundation to set them up for a lifetime of success.
+								</p>
+								<div class="checkboxTable">
+									<div class="checkItem"><i class="fa-solid fa-square-check"></i>Potty training</div>
+									<div class="checkItem"><i class="fa-solid fa-square-check"></i>Crate training</div>
+									<div class="checkItem"><i class="fa-solid fa-square-check"></i>Socialization</div>
+									<div class="checkItem"><i class="fa-solid fa-square-check"></i>Basic obedience</div>
+								</div>
+							</div>
+							<div class="buttonContainer">
+								<a href="/puppyStayAndTrain.html" class="button">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="featuredService appearOnScroll">
+						<div class="serviceImageContainer">
+							<img src="/images/kiwi.png" />
+						</div>
+						<div class="serviceContent">
+							<h2>Solutions for problem behaviors</h2>
+							<p class="description">For all dogs</p>
+							<div class="border"></div>
+							<div class="blurb">
+								<p>
+									We know a dog isn't defined by what they have a hard time with. Sarah has worked with thousands of reactive, aggressive, fearful, or otherwise tricky dogs. Help is within reach.
+								</p>
+								<p>
+									Post-consultation telephone and email support are included at no additional charge.
+								</p>
+							</div>
+							<div class="buttonContainer">
+								<a href="/behaviorModification.html" class="button">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="featuredService appearOnScroll">
+						<div class="serviceImageContainer">
+							<img src="/images/SarahInVeryRealDanger.png" />
+						</div>
+						<div class="serviceContent">
+							<h2>Seminar speaker</h2>
+							<p class="description">For professional organizations</p>
+							<div class="border"></div>
+							<div class="blurb">
+								<p>
+									Sarah has spoken at a million places. Here are some examples.
+								</p>
+							</div>
+							<div class="buttonContainer">
+								<a href="/seminarSpeaker.html" class="button">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="featuredService appearOnScroll">
+						<div class="serviceImageContainer">
+							<img src="/images/puppy1.png" />
+						</div>
+						<div class="serviceContent">
+							<h2>Picking your next dog</h2>
+							<p class="description">For those looking for a dog</p>
+							<div class="border"></div>
+							<div class="blurb">
+								<p>
+									Choosing your next four-legged friend is a big decision. How do you know they'll be the right fit? How can you avoid surprises as they mature? Can you stack the deck in your favor?
+								</p>
+							</div>
+							<div class="buttonContainer">
+								<a href="/seminarSpeaker.html" class="button">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="banner">
+				<h1>Did you know we offer discounts for rescues?</h1>
+				<p>Discounts available for dogs obtained from a rescue or animal shelter with proof of adoption</p>
+			</div>
+
+			<div class="reviewsSection appearOnScroll">
+				<h1>Check out what people are saying on Google</h1>
+				<div class="widgetContainer">
+					<div class="embedsocial-hashtag" data-ref="d9fb8edf60b454fd8cae301b5055eb68fb0cbab7">
+						<a class="feed-powered-by-es feed-powered-by-es-badge-img" href="https://embedsocial.com/blog/embed-google-reviews/" target="_blank" title="Embed Google reviews">
+							<img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
