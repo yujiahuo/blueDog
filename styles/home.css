@@ -22,16 +22,14 @@
 .sarahSection {
   padding: 2rem;
   overflow: hidden;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2274509804)), url("../images/stockWoman.jpg");
-  background-size: cover;
-  height: 40rem;
-  background-position-y: -8rem;
-  background-position-x: -4rem;
+  background-image: linear-gradient(0.3turn, rgba(255, 255, 255, 0), 49rem, #eef7ff 49rem), url("../images/sarahWithShelties2.png");
+  background-repeat: no-repeat;
+  height: 36rem;
   position: relative;
 }
 .sarahSection .textContent {
   position: relative;
-  top: 4rem;
+  top: 5rem;
   width: 47rem;
 }
 .sarahSection .textContent.appearOnScroll {
@@ -39,7 +37,7 @@
   transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .sarahSection .textContent.appearOnScroll.appear {
-  left: 40%;
+  left: 48%;
 }
 
 .featuredSection {
@@ -159,9 +157,8 @@
     font-size: 2rem;
   }
   .sarahSection {
-    background-position-x: -11rem;
-    background-size: 73rem;
-    height: 33rem;
+    background-image: url("../images/sarahWithShelties2.png");
+    background-position-x: 50%;
   }
   .sarahSection .textContent {
     position: absolute;
