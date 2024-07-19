@@ -86,6 +86,16 @@
 #menu .menuDropdown .column + .column {
   margin-left: 3rem;
 }
+#menu .menuDropdown .promotedOption {
+  background-color: #76c378;
+  color: #153516;
+}
+#menu .menuDropdown .promotedOption:hover {
+  background-color: #94dd96;
+}
+#menu .menuDropdown .promotedOption .description {
+  color: #3a5f3b;
+}
 
 #mobileMenu {
   display: none;

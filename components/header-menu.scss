@@ -102,6 +102,19 @@
 		.column + .column {
 			margin-left: 3rem;
 		}
+
+		.promotedOption {
+			background-color: #76c378;
+			color: #153516;
+
+			&:hover {
+				background-color:#94dd96;
+			}
+
+			.description {
+				color: #3a5f3b;
+			}
+		}
 	}
 }
 
