@@ -37,6 +37,46 @@
 .servicePage .headingArea .quickInfo .fa-solid {
   padding-left: 0;
 }
+.servicePage .animalActorsContent {
+  text-align: center;
+}
+.servicePage .animalActorsContent .mainContent {
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+.servicePage .animalActorsContent .mainContent .animalPhotos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+}
+.servicePage .animalActorsContent .mainContent .animalPhotos .photoWithMat img {
+  max-height: 23rem;
+}
+.servicePage .animalActorsContent .mainContent .card {
+  width: 40rem;
+  margin: auto;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+.servicePage .animalActorsContent .mainContent .card .textContent {
+  margin-right: 1rem;
+}
+.servicePage .animalActorsContent .mainContent .card .photo {
+  height: 10rem;
+}
+.servicePage .animalActorsContent .mainContent .card .photo img {
+  height: 100%;
+}
+.servicePage .animalActorsContent .igPosts {
+  display: flex;
+  margin: auto;
+  width: 60rem;
+}
+.servicePage .animalActorsContent .igPosts iframe {
+  margin: 1rem !important;
+}
 .servicePage .pageContent {
   width: 60%;
   max-width: 95rem;

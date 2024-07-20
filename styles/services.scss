@@ -44,6 +44,56 @@
 		}
 	}
 
+	.animalActorsContent {
+		text-align: center;
+
+		.mainContent {	
+			text-align: center;
+			width: 80%;
+			margin: 1rem auto;
+
+			.animalPhotos {
+				display: flex;
+				justify-content: space-evenly;
+				margin: 3rem 0;
+
+				.photoWithMat img {
+					max-height: 23rem;
+				}
+			}
+			.card {
+				width: 40rem;
+				margin: auto;
+				border-radius: 2rem;
+				margin-bottom: 3rem;
+				padding: 2rem;
+
+				.textContent {
+					margin-right: 1rem;
+				}
+
+				.photo {
+					height: 10rem;
+
+					img {
+						height: 100%;
+					}
+				}
+			}
+
+		}
+
+		.igPosts {
+			display: flex;
+			margin: auto;
+			width: 60rem;
+
+			iframe {
+				margin: 1rem !important; // ig embed uses scripts to add inline styles that we have to override
+			}
+		}
+	}
+
 	.pageContent {
 		width: 60%;
 		max-width: 95rem;

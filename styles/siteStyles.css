@@ -135,7 +135,7 @@ ul.extraSpacing li {
 }
 .photoWithMat .mat.lightMat {
   transform: rotate(8deg);
-  background: #b5deff;
+  background: #dbeeff;
 }
 .photoWithMat img {
   position: relative;
