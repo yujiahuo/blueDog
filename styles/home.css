@@ -41,7 +41,7 @@
 }
 
 .featuredSection {
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   background-color: #dbeeff;
 }
 .featuredSection .featuresContainer {
@@ -75,19 +75,11 @@
 .featuredSection .featuredService:nth-child(2) h2 {
   color: #249454;
 }
-.featuredSection .featuredService:nth-child(2) img {
-  position: relative;
-  left: -9rem;
-}
 .featuredSection .featuredService:nth-child(3) .serviceContent {
   background-color: #fae0c7;
 }
 .featuredSection .featuredService:nth-child(3) h2 {
   color: #cc7c32;
-}
-.featuredSection .featuredService:nth-child(3) img {
-  position: relative;
-  right: 1rem;
 }
 .featuredSection .featuredService:nth-child(4) .serviceContent {
   background-color: #f9fac7;
@@ -100,7 +92,8 @@
   overflow: hidden;
 }
 .featuredSection .featuredService .serviceImageContainer img {
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 .featuredSection .featuredService .serviceContent {
   padding: 2rem;

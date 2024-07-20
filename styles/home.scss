@@ -51,7 +51,7 @@
 }
 
 .featuredSection {
-	padding: 1rem;
+	padding: 1rem 1rem 3rem 1rem;
 	background-color: $lightBG;
 	
 	.featuresContainer {
@@ -93,11 +93,6 @@
 			h2 {
 				color: #249454;
 			}
-
-			img {
-				position: relative;
-				left: -9rem;
-			}
 		}
 
 		&:nth-child(3) {
@@ -107,11 +102,6 @@
 	
 			h2 {
 				color: #cc7c32;
-			}
-
-			img {
-				position: relative;
-				right: 1rem;
 			}
 		}
 
@@ -130,7 +120,8 @@
 			overflow: hidden;
 	
 			img {
-				height: 100%;
+				width: 100%;
+				min-height: 100%;
 			}
 		}
 	

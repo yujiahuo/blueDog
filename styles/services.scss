@@ -86,7 +86,7 @@
 		.igPosts {
 			display: flex;
 			margin: auto;
-			width: 60rem;
+			width: 70rem;
 
 			iframe {
 				margin: 1rem !important; // ig embed uses scripts to add inline styles that we have to override
@@ -126,10 +126,13 @@
 			top: 2rem;
 			width: 22rem;
 			align-self: center;
+			border-radius: 10px;
+			overflow: hidden;
+			max-height: 20rem;
 	
 			img {
 				width: 100%;
-				border-radius: 10px;
+				border-radius: 10px; // needed on both img and container since either could be taller
 			}
 		}
 	
