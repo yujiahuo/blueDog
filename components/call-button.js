@@ -6,7 +6,7 @@ class CallButton extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 			<a href="tel:+16082135304" class="button">
-				This button will eventually go to online scheduling: <br/><b>608-213-5304</b>
+				Start with a free 30 minute call: <br/><b>608-213-5304</b>
 			</a>
 		`
 	}

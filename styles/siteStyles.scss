@@ -168,6 +168,17 @@ iframe {
 	border: none;
 }
 
+.quote {
+	background-image: url("../images/quote.png");
+	background-size: cover;
+    background-position: center;
+	padding: 1rem;
+
+	p {
+		padding: 5rem;
+	}
+}
+
   
 @media(max-width:850px) {
 	.waveContainer::before {    

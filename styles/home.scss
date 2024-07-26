@@ -177,7 +177,23 @@
 	}
 }
 
-.featuredSection, .reviewsSection {
+.whySection {
+	.quoteOne {
+		background-color: rgb(30, 30, 82);
+		display: flex;
+		margin: 1rem 20%;
+
+		img {
+			width: 20rem;
+		}
+
+		p {
+			color: white;
+		}
+	}
+}
+
+.featuredSection, .reviewsSection, .whySection {
 	h1 {
 		text-align: center;
 		padding-top: 2rem;
