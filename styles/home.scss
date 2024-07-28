@@ -24,13 +24,50 @@
 	}
 }
 
+// .tagline {
+// 	background-color: $themeDarkerer;
+// 	color: white;
+// 	font-size: 2rem;
+// 	text-align: center;
+// 	font-weight: lighter;
+// 	padding: 1rem 0;
+
+// 	div {
+// 		display: inline;
+// 		margin: 1rem;
+// 	}
+// }
+
 .sarahSection {
 	padding: 2rem;
 	overflow: hidden;
-	background-image: linear-gradient(0.3turn, rgba(255, 255, 255, 0), 49rem, $veryLightBG 49rem), url("../images/sarahWithShelties2.png");
-	background-repeat: no-repeat;
-	height: 36rem;
+	background-image: url('../images/polkaDotBg.png');
+	background-size: cover;
+	background-color: $mediumBG;
+	height: 38rem;
 	position: relative;
+
+	.tagline {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		span {
+			color: $themeDarkerer;
+			font-size: 2.5rem;
+			font-weight: lighter;
+			margin: 0 1rem;
+		}
+	}
+
+	.roundImgContainer {
+		position: absolute;
+		border-radius: 8rem 18rem 12rem 13rem;
+		width: 40rem;
+		height: 40rem;
+		overflow: hidden;
+		left: 2rem;
+		top: 6rem;
+	}
 
 	.textContent {
 		position: relative;
@@ -45,7 +82,7 @@
 		}
 		
 		&.appearOnScroll.appear {
-			left: 49rem;
+			left: 43rem;
 		}
 	}
 }
@@ -178,18 +215,36 @@
 }
 
 .whySection {
-	.quoteOne {
-		background-color: rgb(30, 30, 82);
-		display: flex;
-		margin: 1rem 20%;
+	background-color: $darkBG;
+	min-height: 40rem;
+	padding: 0 2rem 2rem 2rem;
 
-		img {
-			width: 20rem;
-		}
+	h1, h2 {
+		color: $themeLighter;
+	}
 
-		p {
-			color: white;
-		}
+	p, a {
+		color: white;
+	}
+
+	.textContent {
+		width: 50%;
+		padding-left: 5rem;
+		padding-right: 1rem;
+	}
+
+	.quote {
+		background-image: linear-gradient(#1c6fb899, #1c6fb899), url(../images/quote.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 4rem 5rem 5rem 7rem;
+		max-width: 39rem;
+		max-height: 30rem;
+		width: 39rem;
+		height: 30rem;
+		right: 0;
+		font-style: italic;
 	}
 }
 
@@ -209,8 +264,27 @@
 	}
 
 	.sarahSection{
-		background-image: url("../images/sarahWithShelties2.png");
+		background-image: linear-gradient(#00000096, #0000004f), url("../images/sarahWithShelties2.png");
 		background-position-x: 50%;
+		padding: 0;
+
+		.tagline {
+			top: 1rem;
+			position: relative;
+			text-align: center;
+
+			span {
+				display: block;
+				font-size: 2rem;
+				color: white;
+				margin: 0.5rem;
+				font-weight: normal;
+			}
+		}
+
+		.roundImgContainer {
+			display: none;
+		}
 
 		.textContent {
 			position: absolute;
@@ -236,6 +310,22 @@
 				left: 0;
 				bottom: 0;
 			}
+		}
+	}
+
+	.whySection {
+		.flexParent {
+			flex-direction: column;
+		}
+		.textContent {
+			width: 100%;
+			padding: 0 0 2rem 0;
+		}
+	
+		.quote {
+			margin: auto;
+			width: 100%;
+			padding: 10%;
 		}
 	}
 

@@ -158,14 +158,9 @@ iframe {
   border: none;
 }
 
-.quote {
-  background-image: url("../images/quote.png");
-  background-size: cover;
-  background-position: center;
-  padding: 1rem;
-}
-.quote p {
-  padding: 5rem;
+.flexParent {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 850px) {
