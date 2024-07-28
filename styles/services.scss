@@ -62,7 +62,8 @@
 				}
 			}
 			.card {
-				width: 40rem;
+				max-width: 40rem;
+				width: 90%;
 				margin: auto;
 				border-radius: 2rem;
 				margin-bottom: 3rem;
@@ -86,7 +87,7 @@
 		.igPosts {
 			display: flex;
 			margin: auto;
-			width: 70rem;
+			max-width: 70rem;
 
 			iframe {
 				margin: 1rem !important; // ig embed uses scripts to add inline styles that we have to override
@@ -278,6 +279,32 @@
 						min-width: 0;
 						max-width: 100%;
 						margin: 1rem 0;
+					}
+				}
+			}
+		}
+
+		.animalActorsContent {
+			.igPosts {
+				flex-direction: column;
+
+				iframe {
+					margin: 1rem auto !important; // ig embed uses scripts to add inline styles that we have to override
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.servicePage {
+		.animalActorsContent {
+			.mainContent {
+				.animalPhotos {
+					flex-direction: column;
+
+					.photoWithMat {
+						margin: auto;
 					}
 				}
 			}

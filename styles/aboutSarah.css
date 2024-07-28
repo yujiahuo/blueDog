@@ -16,6 +16,7 @@
 }
 .aboutPage .headingArea h1 {
   font-size: 4rem;
+  text-wrap: nowrap;
 }
 .aboutPage .headingArea .bioWords {
   width: -moz-fit-content;
@@ -102,8 +103,8 @@
   flex-wrap: wrap;
 }
 .aboutPage .photosRow .photo {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
   margin: 0.5rem;
 }
@@ -122,6 +123,7 @@
   .aboutPage .headingArea h1 {
     font-size: 2.5rem;
     font-weight: 600;
+    text-wrap: wrap;
   }
   .aboutPage .headingArea .bioWords span + span {
     margin-left: 1rem;
@@ -130,10 +132,11 @@
     margin-right: 1rem;
   }
   .aboutPage .photoWithMat {
-    margin: 3rem 1rem;
+    margin: 3rem auto;
     padding: 0;
     height: auto;
     width: auto;
+    max-width: 38rem;
   }
   .aboutPage .photoWithMat img {
     height: initial;

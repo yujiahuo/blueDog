@@ -6,15 +6,12 @@
   text-align: center;
   padding: 2rem;
 }
-
 .banner h1 {
   color: white;
 }
-
 .banner p {
   color: white;
 }
-
 .banner .button {
   margin: auto;
   margin-top: 1rem;
@@ -30,156 +27,111 @@
   height: 36rem;
   position: relative;
 }
-
 .sarahSection .textContent {
   position: relative;
   top: 5rem;
-  width: 47rem;
+  width: calc(100% - 48rem);
 }
-
 .sarahSection .textContent.appearOnScroll {
   left: 37%;
-  -webkit-transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
 .sarahSection .textContent.appearOnScroll.appear {
-  left: 48%;
+  left: 49rem;
 }
 
 .featuredSection {
   padding: 1rem 1rem 3rem 1rem;
   background-color: #dbeeff;
 }
-
 .featuredSection .featuresContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: 125rem;
   margin: auto;
 }
-
 .featuredSection .featuredService {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 55rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   overflow: hidden;
   height: 26rem;
 }
-
 .featuredSection .featuredService .border {
   margin: 0.5rem 0;
 }
-
 .featuredSection .featuredService:nth-child(1) .serviceContent {
   background-color: #f3c5ff;
 }
-
 .featuredSection .featuredService:nth-child(1) h2, .featuredSection .featuredService:nth-child(1) i {
   color: #a04ab6;
 }
-
 .featuredSection .featuredService:nth-child(2) .serviceContent {
   background-color: #c7fadd;
 }
-
 .featuredSection .featuredService:nth-child(2) h2 {
   color: #249454;
 }
-
 .featuredSection .featuredService:nth-child(3) .serviceContent {
   background-color: #fae0c7;
 }
-
 .featuredSection .featuredService:nth-child(3) h2 {
   color: #cc7c32;
 }
-
 .featuredSection .featuredService:nth-child(4) .serviceContent {
   background-color: #f9fac7;
 }
-
 .featuredSection .featuredService:nth-child(4) h2 {
   color: #e4ba30;
 }
-
 .featuredSection .featuredService .serviceImageContainer {
   width: 50%;
   overflow: hidden;
 }
-
 .featuredSection .featuredService .serviceImageContainer img {
   width: 100%;
   min-height: 100%;
 }
-
 .featuredSection .featuredService .serviceContent {
   padding: 2rem;
   width: 65%;
   background-image: url("../images/polkaDotBg.png");
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .featuredSection .featuredService .serviceContent h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .featuredSection .featuredService .serviceContent .checkboxTable {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   max-height: 7rem;
   width: 20rem;
 }
-
 .featuredSection .featuredService .serviceContent .checkboxTable .checkItem {
   max-width: 14rem;
   height: 2rem;
 }
-
 .featuredSection .featuredService .serviceContent .blurb {
   height: 100%;
   max-width: 50rem;
 }
-
 .featuredSection .featuredService .serviceContent .button {
   float: right;
 }
 
 .reviewsSection {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffffcc), to(#ffffffcc)), url("../images/mapBG.png");
-  background-image: linear-gradient(#ffffffcc, #ffffffcc), url("../images/mapBG.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/mapBG.png");
   background-size: cover;
   background-position: center;
 }
-
 .reviewsSection .widgetContainer {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-left: 74px;
@@ -188,17 +140,13 @@
 }
 
 .whySection .quoteOne {
-  background-color: #1e1e52;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(30, 30, 82);
   display: flex;
   margin: 1rem 20%;
 }
-
 .whySection .quoteOne img {
   width: 20rem;
 }
-
 .whySection .quoteOne p {
   color: white;
 }
@@ -231,34 +179,25 @@
   .sarahSection .textContent.appearOnScroll {
     left: 0;
     bottom: -0.5rem;
-    -webkit-transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   .sarahSection .textContent.appearOnScroll.appear {
     left: 0;
     bottom: 0;
   }
   .featuredSection .featuresContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .featuredSection .featuredService {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     max-width: 26rem;
     height: unset;
   }
   .featuredSection .featuredService .serviceImageContainer {
     width: 100%;
-    height: 17rem;
+    height: 22rem;
   }
   .featuredSection .featuredService .serviceImageContainer img {
     width: 100%;
@@ -272,5 +211,4 @@
   .featuredSection .featuredService .buttonContainer {
     padding-top: 1rem;
   }
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

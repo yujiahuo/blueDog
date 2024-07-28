@@ -35,7 +35,7 @@
 	.textContent {
 		position: relative;
 		top: 5rem;
-   		width: 47rem;
+		width: calc(100% - 48rem);
 
 		&.appearOnScroll {
 			left: 37%;
@@ -45,7 +45,7 @@
 		}
 		
 		&.appearOnScroll.appear {
-			left: 48%;
+			left: 49rem;
 		}
 	}
 }
@@ -254,7 +254,7 @@
 	
 			.serviceImageContainer {
 				width: 100%;
-				height: 17rem;
+				height: 22rem;
 
 				img {
 					width: 100%;

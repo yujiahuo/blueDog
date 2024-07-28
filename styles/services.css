@@ -54,7 +54,8 @@
   max-height: 23rem;
 }
 .servicePage .animalActorsContent .mainContent .card {
-  width: 40rem;
+  max-width: 40rem;
+  width: 90%;
   margin: auto;
   border-radius: 2rem;
   margin-bottom: 3rem;
@@ -72,7 +73,7 @@
 .servicePage .animalActorsContent .igPosts {
   display: flex;
   margin: auto;
-  width: 70rem;
+  max-width: 70rem;
 }
 .servicePage .animalActorsContent .igPosts iframe {
   margin: 1rem !important;
@@ -227,5 +228,19 @@
     min-width: 0;
     max-width: 100%;
     margin: 1rem 0;
+  }
+  .servicePage .animalActorsContent .igPosts {
+    flex-direction: column;
+  }
+  .servicePage .animalActorsContent .igPosts iframe {
+    margin: 1rem auto !important;
+  }
+}
+@media (max-width: 800px) {
+  .servicePage .animalActorsContent .mainContent .animalPhotos {
+    flex-direction: column;
+  }
+  .servicePage .animalActorsContent .mainContent .animalPhotos .photoWithMat {
+    margin: auto;
   }
 }/*# sourceMappingURL=services.css.map */

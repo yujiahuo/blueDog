@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -62,28 +61,22 @@ p + * {
 
 .card {
   background-color: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
 }
 
 .coloredCard {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
-
 .coloredCard h2 {
   font-size: 3rem;
 }
-
 .coloredCard .content {
   padding: 1rem 0;
 }
-
 .coloredCard .content p {
   margin-top: 0.5rem;
 }
-
 .coloredCard .content .button {
   float: right;
 }
@@ -102,7 +95,6 @@ p + * {
 }
 
 a.button {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: block;
@@ -113,7 +105,6 @@ a.button {
   color: white;
   font-weight: 500;
 }
-
 a.button :visited {
   color: inherit;
 }
@@ -126,33 +117,28 @@ ul {
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
-
 ul.extraSpacing li {
   margin-bottom: 0.5rem;
 }
 
 .photoWithMat {
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-
 .photoWithMat .mat {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-
 .photoWithMat .mat.darkMat {
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  transform: rotate(-10deg);
   background: #1c6fb8;
 }
-
 .photoWithMat .mat.lightMat {
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  transform: rotate(8deg);
   background: #dbeeff;
 }
-
 .photoWithMat img {
   position: relative;
   z-index: 1;
@@ -161,7 +147,6 @@ ul.extraSpacing li {
 
 .appearOnScroll {
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -179,7 +164,6 @@ iframe {
   background-position: center;
   padding: 1rem;
 }
-
 .quote p {
   padding: 5rem;
 }
@@ -192,10 +176,8 @@ iframe {
     display: none;
   }
 }
-
 @media (min-width: 851px) {
   .mobileOnly {
     display: none;
   }
-}
-/*# sourceMappingURL=siteStyles.css.map */
+}/*# sourceMappingURL=siteStyles.css.map */
