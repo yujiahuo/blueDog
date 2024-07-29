@@ -9,6 +9,9 @@
   justify-content: space-between;
   background-color: #23366d;
 }
+.header i {
+  padding: 0 0.5rem;
+}
 .header .logo {
   width: 11rem;
   max-width: 50%;

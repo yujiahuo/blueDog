@@ -1,0 +1,68 @@
+@import "../styles/theme";
+
+#footer {
+	color: white;
+	line-height: 1.5;
+
+	.topSection {
+		padding: 1rem 10%;
+		background: linear-gradient(-123deg, #1c6fb8 60%, #72b1e9 60%);
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.bottomSection {
+		background-color: $headerPrimaryBG;
+		text-align: center;
+		padding: 0.5rem 0;
+	}
+
+	h4 {
+		color: white;
+		padding-bottom: 0.5rem;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		display: block;
+	}
+
+	.block {
+		margin-bottom: 1rem;
+		margin-right: 1rem;
+	}
+
+	.border {
+		width: 50%;
+		margin: 2rem auto;
+		border-bottom: 1px dashed white;
+	}
+
+	.logoContainer {
+		width: 14rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	img {
+		height: 5rem;
+		margin-top: 1rem;
+		margin-right: 8rem;
+	}
+}
+
+@media (max-width: 1120px) {
+	#footer {
+		.topSection {
+			flex-direction: column;
+			background: linear-gradient(0deg, #1c6fb8 18rem, #72b1e9 18rem);
+		}
+
+		img {
+			margin-bottom: 1rem;
+		}
+	}
+}

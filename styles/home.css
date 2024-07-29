@@ -40,7 +40,7 @@
 }
 .sarahSection .roundImgContainer {
   position: absolute;
-  border-radius: 8rem 18rem 12rem 13rem;
+  border-radius: 7rem 19rem;
   width: 40rem;
   height: 40rem;
   overflow: hidden;
@@ -205,9 +205,10 @@
     padding: 0;
   }
   .sarahSection .tagline {
-    top: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
     position: relative;
-    text-align: center;
+    text-align: left;
   }
   .sarahSection .tagline span {
     display: block;

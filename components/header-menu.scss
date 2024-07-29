@@ -11,6 +11,10 @@
 	justify-content: space-between;
 	background-color: $headerPrimaryBG;
 
+	i {
+		padding: 0 0.5rem;
+	}
+	
 	.logo {
 		width: 11rem;
 		max-width: 50%;
