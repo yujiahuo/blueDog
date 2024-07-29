@@ -41,11 +41,11 @@
 .sarahSection .roundImgContainer {
   position: absolute;
   border-radius: 7rem 19rem;
-  width: 40rem;
+  width: 49rem;
   height: 40rem;
   overflow: hidden;
-  left: 2rem;
-  top: 6rem;
+  left: -6rem;
+  top: 7rem;
 }
 .sarahSection .textContent {
   position: relative;
