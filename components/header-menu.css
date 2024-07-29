@@ -90,11 +90,12 @@
   margin-left: 3rem;
 }
 #menu .menuDropdown .promotedOption {
-  background-color: #76c378;
-  color: #153516;
+  background-color: #c0ffbf;
+  color: #081c09;
+  border-radius: 0.5rem;
 }
 #menu .menuDropdown .promotedOption:hover {
-  background-color: #94dd96;
+  background-color: #e0ffe2;
 }
 #menu .menuDropdown .promotedOption .description {
   color: #3a5f3b;

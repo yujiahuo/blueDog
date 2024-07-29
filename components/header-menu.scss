@@ -14,7 +14,7 @@
 	i {
 		padding: 0 0.5rem;
 	}
-	
+
 	.logo {
 		width: 11rem;
 		max-width: 50%;
@@ -108,11 +108,12 @@
 		}
 
 		.promotedOption {
-			background-color: #76c378;
-			color: #153516;
+			    background-color: #c0ffbf;
+				color: #081c09;
+				border-radius: 0.5rem;
 
 			&:hover {
-				background-color:#94dd96;
+				background-color:#e0ffe2;
 			}
 
 			.description {
