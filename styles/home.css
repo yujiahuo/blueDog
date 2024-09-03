@@ -37,6 +37,7 @@
   font-size: 2.5rem;
   font-weight: lighter;
   margin: 0 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .sarahSection .roundImgContainer {
   position: absolute;
@@ -181,12 +182,11 @@
   background-size: contain;
   background-position: center;
   padding: 4rem 5rem 5rem 7rem;
-  max-width: 39rem;
-  max-height: 30rem;
-  width: 39rem;
   height: 30rem;
-  right: 0;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .featuredSection h1, .reviewsSection h1, .whySection h1 {
@@ -200,22 +200,26 @@
     font-size: 2rem;
   }
   .sarahSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5882352941), rgba(0, 0, 0, 0.3098039216)), url("../images/sarahWithShelties2.png");
+    background-image: url("../images/sarahWithShelties2.png");
     background-position-x: 50%;
     padding: 0;
   }
   .sarahSection .tagline {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
+    margin: 1rem 0.5rem;
     position: relative;
     text-align: left;
   }
   .sarahSection .tagline span {
+    background: rgba(0, 0, 0, 0.3764705882);
+    border-radius: 0.75rem;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
-    margin: 0.5rem;
+    margin: 0.25rem;
     font-weight: normal;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem;
   }
   .sarahSection .roundImgContainer {
     display: none;
