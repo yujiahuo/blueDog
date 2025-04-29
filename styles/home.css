@@ -162,20 +162,25 @@
 .whySection {
   background-color: #1c6fb8;
   min-height: 40rem;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 5rem 2rem 5rem;
 }
 .whySection h1, .whySection h2 {
   color: #a9eaff;
+}
+.whySection h2 {
+  margin-bottom: 0.5rem;
 }
 .whySection p, .whySection a {
   color: white;
 }
 .whySection .textContent {
-  width: 50%;
-  padding-left: 5rem;
-  padding-right: 1rem;
+  padding-right: 3rem;
+  width: 70%;
 }
 .whySection .quote {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   background-image: linear-gradient(rgba(28, 111, 184, 0.6), rgba(28, 111, 184, 0.6)), url(../images/quote.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -187,6 +192,25 @@
   height: 30rem;
   right: 0;
   font-style: italic;
+}
+.whySection .qualificationIcons {
+  display: flex;
+}
+.whySection .qualificationIcons .circleCard {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whySection .qualificationIcons .circleCard img {
+  width: 100%;
+  padding: 0.4rem;
 }
 
 .featuredSection h1, .reviewsSection h1, .whySection h1 {
@@ -200,7 +224,7 @@
     font-size: 2rem;
   }
   .sarahSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5882352941), rgba(0, 0, 0, 0.3098039216)), url("../images/sarahWithShelties2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5882352941) 13%, rgba(0, 0, 0, 0) 34%), url(../images/sarahWithShelties2.png);
     background-position-x: 50%;
     padding: 0;
   }
