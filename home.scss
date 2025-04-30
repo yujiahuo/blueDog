@@ -27,39 +27,17 @@
 .sarahSection {
 	padding: 2rem;
 	overflow: hidden;
-	background-image: url('../images/polkaDotBg.png');
+	background-image: linear-gradient(to right, #ffffff00, #ffffff3a), url('../images/stockWoman.jpg');
 	background-size: cover;
-	background-color: $mediumBG;
-	height: 38rem;
+	height: 40rem;
+    background-position-y: -8rem;
+    background-position-x: -4rem;
 	position: relative;
-
-	.tagline {
-		text-align: center;
-		margin-bottom: 1rem;
-
-		span {
-			color: $themeDarkerer;
-			font-size: 2.5rem;
-			font-weight: lighter;
-			margin: 0 1rem;
-			font-family: Georgia, 'Times New Roman', Times, serif
-		}
-	}
-
-	.roundImgContainer {
-		position: absolute;
-		border-radius: 7rem 19rem;
-		width: 49rem;
-		height: 40rem;
-		overflow: hidden;
-		left: -6rem;
-		top: 7rem;
-	}
 
 	.textContent {
 		position: relative;
-		top: 5rem;
-		width: calc(100% - 48rem);
+		top: 4rem;
+   		width: 47rem;
 
 		&.appearOnScroll {
 			left: 37%;
@@ -69,13 +47,13 @@
 		}
 		
 		&.appearOnScroll.appear {
-			left: 43rem;
+			left: 40%;
 		}
 	}
 }
 
 .featuredSection {
-	padding: 1rem 1rem 3rem 1rem;
+	padding: 1rem;
 	background-color: $lightBG;
 	
 	.featuresContainer {
@@ -117,6 +95,11 @@
 			h2 {
 				color: #249454;
 			}
+
+			img {
+				position: relative;
+				left: -9rem;
+			}
 		}
 
 		&:nth-child(3) {
@@ -126,6 +109,11 @@
 	
 			h2 {
 				color: #cc7c32;
+			}
+
+			img {
+				position: relative;
+				right: 1rem;
 			}
 		}
 
@@ -144,8 +132,7 @@
 			overflow: hidden;
 	
 			img {
-				width: 100%;
-				min-height: 100%;
+				height: 100%;
 			}
 		}
 	
@@ -201,90 +188,7 @@
 	}
 }
 
-.whySection {
-	background-color: $darkBG;
-	min-height: 40rem;
-	padding: 0 5rem 2rem 5rem;
-
-	h1, h2 {
-		color: $themeLighter;
-	}
-
-	h2 {
-		margin-bottom: 0.5rem;
-	}
-
-	p, a {
-		color: white;
-	}
-
-	.textContent {
-		padding-right: 3rem;
-		width: 70%;
-	}
-
-	.quote {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: center;
-		background-image: linear-gradient(#1c6fb899, #1c6fb899), url(../images/quote.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		padding: 4rem 5rem 5rem 7rem;
-		height: 30rem;
-		font-style: italic;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.qualificationIcons {
-		display: flex;
-
-		.circleCard {
-			width: 6rem;
-			height: 6rem;
-			border-radius: 3rem;
-			padding: 0.25rem;
-			margin: 1rem;
-			background-color: white;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			
-			img {
-				width: 100%;
-				padding: 0.4rem;
-			}
-		}
-	}
-
-	.qualificationIcons {
-		display: flex;
-
-		.circleCard {
-			width: 6rem;
-			height: 6rem;
-			border-radius: 3rem;
-			padding: 0.25rem;
-			margin: 1rem;
-			background-color: white;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			
-			img {
-				width: 100%;
-				padding: 0.4rem;
-			}
-		}
-	}
-}
-
-.featuredSection, .reviewsSection, .whySection {
+.featuredSection, .reviewsSection {
 	h1 {
 		text-align: center;
 		padding-top: 2rem;
@@ -300,31 +204,9 @@
 	}
 
 	.sarahSection{
-		background-image: linear-gradient(#00000096 13%, #00000000 34%), url(../images/sarahWithShelties2.png);
-		background-position-x: 50%;
-		padding: 0;
-
-		.tagline {
-			margin: 1rem 0.5rem;
-			position: relative;
-			text-align: left;
-
-			span {
-				background: #00000060;
-				border-radius: 0.75rem;
-				display: block;
-				font-size: 1.5rem;
-				color: white;
-				margin: 0.25rem;
-				font-weight: normal;
-				width: fit-content;
-				padding: 0.5rem;
-			}
-		}
-
-		.roundImgContainer {
-			display: none;
-		}
+		background-position-x: -11rem;
+		background-size: 73rem;
+		height: 33rem;
 
 		.textContent {
 			position: absolute;
@@ -353,22 +235,6 @@
 		}
 	}
 
-	.whySection {
-		.flexParent {
-			flex-direction: column;
-		}
-		.textContent {
-			width: 100%;
-			padding: 0 0 2rem 0;
-		}
-	
-		.quote {
-			margin: auto;
-			width: 100%;
-			padding: 10%;
-		}
-	}
-
 	.featuredSection {
 
 		.featuresContainer {
@@ -384,7 +250,7 @@
 	
 			.serviceImageContainer {
 				width: 100%;
-				height: 22rem;
+				height: 17rem;
 
 				img {
 					width: 100%;

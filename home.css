@@ -22,47 +22,28 @@
 .sarahSection {
   padding: 2rem;
   overflow: hidden;
-  background-image: url("../images/polkaDotBg.png");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2274509804)), url("../images/stockWoman.jpg");
   background-size: cover;
-  background-color: #bcd9f3;
-  height: 38rem;
-  position: relative;
-}
-.sarahSection .tagline {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.sarahSection .tagline span {
-  color: #1c6fb8;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  margin: 0 1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.sarahSection .roundImgContainer {
-  position: absolute;
-  border-radius: 7rem 19rem;
-  width: 49rem;
   height: 40rem;
-  overflow: hidden;
-  left: -6rem;
-  top: 7rem;
+  background-position-y: -8rem;
+  background-position-x: -4rem;
+  position: relative;
 }
 .sarahSection .textContent {
   position: relative;
-  top: 5rem;
-  width: calc(100% - 48rem);
+  top: 4rem;
+  width: 47rem;
 }
 .sarahSection .textContent.appearOnScroll {
   left: 37%;
   transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .sarahSection .textContent.appearOnScroll.appear {
-  left: 43rem;
+  left: 40%;
 }
 
 .featuredSection {
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem;
   background-color: #dbeeff;
 }
 .featuredSection .featuresContainer {
@@ -96,11 +77,19 @@
 .featuredSection .featuredService:nth-child(2) h2 {
   color: #249454;
 }
+.featuredSection .featuredService:nth-child(2) img {
+  position: relative;
+  left: -9rem;
+}
 .featuredSection .featuredService:nth-child(3) .serviceContent {
   background-color: #fae0c7;
 }
 .featuredSection .featuredService:nth-child(3) h2 {
   color: #cc7c32;
+}
+.featuredSection .featuredService:nth-child(3) img {
+  position: relative;
+  right: 1rem;
 }
 .featuredSection .featuredService:nth-child(4) .serviceContent {
   background-color: #f9fac7;
@@ -113,8 +102,7 @@
   overflow: hidden;
 }
 .featuredSection .featuredService .serviceImageContainer img {
-  width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 .featuredSection .featuredService .serviceContent {
   padding: 2rem;
@@ -160,79 +148,7 @@
   margin: auto;
 }
 
-.whySection {
-  background-color: #1c6fb8;
-  min-height: 40rem;
-  padding: 0 5rem 2rem 5rem;
-}
-.whySection h1, .whySection h2 {
-  color: #a9eaff;
-}
-.whySection h2 {
-  margin-bottom: 0.5rem;
-}
-.whySection p, .whySection a {
-  color: white;
-}
-.whySection .textContent {
-  padding-right: 3rem;
-  width: 70%;
-}
-.whySection .quote {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  background-image: linear-gradient(rgba(28, 111, 184, 0.6), rgba(28, 111, 184, 0.6)), url(../images/quote.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 4rem 5rem 5rem 7rem;
-  height: 30rem;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whySection .qualificationIcons {
-  display: flex;
-}
-.whySection .qualificationIcons .circleCard {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 3rem;
-  padding: 0.25rem;
-  margin: 1rem;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whySection .qualificationIcons .circleCard img {
-  width: 100%;
-  padding: 0.4rem;
-}
-.whySection .qualificationIcons {
-  display: flex;
-}
-.whySection .qualificationIcons .circleCard {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 3rem;
-  padding: 0.25rem;
-  margin: 1rem;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whySection .qualificationIcons .circleCard img {
-  width: 100%;
-  padding: 0.4rem;
-}
-
-.featuredSection h1, .reviewsSection h1, .whySection h1 {
+.featuredSection h1, .reviewsSection h1 {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -243,29 +159,9 @@
     font-size: 2rem;
   }
   .sarahSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5882352941) 13%, rgba(0, 0, 0, 0) 34%), url(../images/sarahWithShelties2.png);
-    background-position-x: 50%;
-    padding: 0;
-  }
-  .sarahSection .tagline {
-    margin: 1rem 0.5rem;
-    position: relative;
-    text-align: left;
-  }
-  .sarahSection .tagline span {
-    background: rgba(0, 0, 0, 0.3764705882);
-    border-radius: 0.75rem;
-    display: block;
-    font-size: 1.5rem;
-    color: white;
-    margin: 0.25rem;
-    font-weight: normal;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0.5rem;
-  }
-  .sarahSection .roundImgContainer {
-    display: none;
+    background-position-x: -11rem;
+    background-size: 73rem;
+    height: 33rem;
   }
   .sarahSection .textContent {
     position: absolute;
@@ -287,18 +183,6 @@
     left: 0;
     bottom: 0;
   }
-  .whySection .flexParent {
-    flex-direction: column;
-  }
-  .whySection .textContent {
-    width: 100%;
-    padding: 0 0 2rem 0;
-  }
-  .whySection .quote {
-    margin: auto;
-    width: 100%;
-    padding: 10%;
-  }
   .featuredSection .featuresContainer {
     flex-direction: column;
     align-items: center;
@@ -311,7 +195,7 @@
   }
   .featuredSection .featuredService .serviceImageContainer {
     width: 100%;
-    height: 22rem;
+    height: 17rem;
   }
   .featuredSection .featuredService .serviceImageContainer img {
     width: 100%;
